@@ -51,3 +51,6 @@ ASP.NET Tutorial : https://docs.microsoft.com/en-us/learn/paths/aspnet-core-web-
 .NET tutorial: https://docs.microsoft.com/en-us/learn/paths/build-dotnet-applications-csharp/
 
 ASP.NET MVC: https://dotnet.microsoft.com/en-us/apps/aspnet/mvc
+
+Fake Store API: fakestoreapi.com
+
