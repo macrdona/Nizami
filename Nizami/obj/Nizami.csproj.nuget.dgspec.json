@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\src\\dotnet\\Nizami\\Nizami.csproj": {}
+    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\Nizami.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\src\\dotnet\\Nizami\\Nizami.csproj": {
+    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\Nizami.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\src\\dotnet\\Nizami\\Nizami.csproj",
+        "projectUniqueName": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\Nizami.csproj",
         "projectName": "Nizami",
-        "projectPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\src\\dotnet\\Nizami\\Nizami.csproj",
+        "projectPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\Nizami.csproj",
         "packagesPath": "C:\\Users\\gabim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\src\\dotnet\\Nizami\\obj\\",
+        "outputPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabim\\AppData\\Roaming\\NuGet\\NuGet.Config",
