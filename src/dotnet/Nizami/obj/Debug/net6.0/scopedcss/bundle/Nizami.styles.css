@@ -1,0 +1,15 @@
+/* _content/Nizami/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+nav[b-6ezslrbwbe] {
+    background-color: #7FC37E;
+}
+
+.border-bottom[b-6ezslrbwbe] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-6ezslrbwbe] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}

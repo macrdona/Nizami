@@ -74,3 +74,7 @@ public class PeopleController : Controller
 - Example 
   - If a page has a button to get user details and when pressed it makes a request for the user's details. If that request is binded to the Details function, then the Details function is invoked and the user's id is automatically assigned to variable id.
 
+**Creating a Web Application (Visual Studio)**
+
+- https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?WT.mc_id=dotnet-35129-website&view=aspnetcore-6.0&tabs=visual-studio
+

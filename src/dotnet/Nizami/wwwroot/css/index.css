@@ -1,0 +1,28 @@
+﻿.navbar.navbar-brand {
+    margin-left: 50px;
+    font-size: 40px;
+    font-family: 'Comic Sans MS';
+    color: #193d2b;
+}
+
+.navbar.navbar-custom.navbar-right button {
+    background: black;
+    border-color: black;
+}
+
+.btn-primary {
+    margin: 5px;
+}
+
+.modal-body {
+    background-color: #7FC37E;
+}
+
+.bg-image {
+    background-image: url('/logo/png/High Resolution Logo.png');
+    background-attachment: scroll;
+    height: 1000px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
