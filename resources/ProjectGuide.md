@@ -40,6 +40,14 @@ Link: https://useanimations.com/
 
 Seems dope for adding effects to our website icons. Just a cool addition. 
 
+**SQL Express Database**
+
+Install SQL Server using this link: https://go.microsoft.com/fwlink/?LinkID=866658
+
+Install Microsoft SQL Server Management: https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
+
+    - Connect c# program to database and query database: https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-core?view=azuresql
+
 **Extra Resources**
 
 Frontend: https://www.developerdrive.com/18-learning-resources-for-front-end-developers/
