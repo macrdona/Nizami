@@ -54,3 +54,6 @@ ASP.NET MVC: https://dotnet.microsoft.com/en-us/apps/aspnet/mvc
 
 Fake Store API: fakestoreapi.com
 
+Create a database in Visual Studio: https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16,
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-6.0&tabs=visual-studio#sql-server-express-localdb
+

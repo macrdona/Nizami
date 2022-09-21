@@ -5,7 +5,7 @@
     color: #193d2b;
 }
 
-.navbar.navbar-custom.navbar-right button {
+.navbar.navbar-custom.ms-auto button{
     background: black;
     border-color: black;
 }

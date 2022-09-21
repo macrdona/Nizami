@@ -10,7 +10,7 @@
 @section Header{
     <!--Header and buttons-->
 	<a class="navbar navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nizami</a>
-	<div class="navbar navbar-custom navbar-right">
+	<div class="navbar navbar-custom ms-auto">
 		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
 		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">Log In</button>
 	</div>
@@ -82,7 +82,7 @@
 							</div>
 									
 							<button type="submit" class="btn btn-dark">Log In</button>
-							<p>Not a member?<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup" data-bs-dismiss="modal" aria-label="Close">Sign Up Now</button></p>
+							<p>Not a member?<button type="button" class="btn btn-primary" id="modalClose" data-bs-target="#signup" data-bs-toggle="modal">Sign Up Now</button></p>
 						</form>  
 					</div>
 				</div>     
@@ -93,6 +93,7 @@
 
 @section Body{
 	<div class="bg-image"></div>
+	<script src="~/js/index.js" asp-append-version="true" defer></script>
 }
 
 @section Footer{
