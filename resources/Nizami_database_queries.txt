@@ -1,3 +1,6 @@
+/*Use database*/
+use Nizami;
+
 /*Creating table for user*/
 
 create table users(

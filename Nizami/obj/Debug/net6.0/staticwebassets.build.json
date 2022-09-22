@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e7d2rL4x32v06euMnHU1NAaUB3tA9k2lhD144RrHG0g=",
+  "Hash": "y4mW3mduaAma7PsVGD5Co9DK7y0IwTbe95rZycWCXQg=",
   "Source": "Nizami",
   "BasePath": "_content/Nizami",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Nizami\\wwwroot",
       "Source": "Nizami",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nizami.styles.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nizami.styles.css",
       "SourceId": "Nizami",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "Nizami.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nizami.styles.css"
+      "OriginalItemSpec": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nizami.styles.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nizami.bundle.scp.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nizami.bundle.scp.css",
       "SourceId": "Nizami",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "Nizami.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nizami.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nizami.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\css\\index.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\css\\index.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\css\\site.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\favicon.ico",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\js\\index.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\js\\index.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "js/index.js",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\js\\index.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\js\\site.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\Coiny Regular.ttf",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\Coiny Regular.ttf",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/Coiny Regular.ttf",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\Coiny Regular.ttf"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-black.eps",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-black.eps",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/eps/logo-black.eps",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\eps\\logo-black.eps"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-color.eps",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-color.eps",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/eps/logo-color.eps",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\eps\\logo-color.eps"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-no-background.eps",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-no-background.eps",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/eps/logo-no-background.eps",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\eps\\logo-no-background.eps"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-white.eps",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\eps\\logo-white.eps",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/eps/logo-white.eps",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\eps\\logo-white.eps"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-black.pdf",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-black.pdf",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/pdf/logo-black.pdf",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\pdf\\logo-black.pdf"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-color.pdf",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-color.pdf",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/pdf/logo-color.pdf",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\pdf\\logo-color.pdf"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-no-background.pdf",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-no-background.pdf",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/pdf/logo-no-background.pdf",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\pdf\\logo-no-background.pdf"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-white.pdf",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\pdf\\logo-white.pdf",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/pdf/logo-white.pdf",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\pdf\\logo-white.pdf"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\png\\High Resolution Logo.png",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\png\\High Resolution Logo.png",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/png/High Resolution Logo.png",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\png\\High Resolution Logo.png"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-black.png",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-black.png",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/png/logo-black.png",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\png\\logo-black.png"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-color.png",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-color.png",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/png/logo-color.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\png\\logo-color.png"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-no-background.png",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-no-background.png",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/png/logo-no-background.png",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\png\\logo-no-background.png"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-white.png",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\png\\logo-white.png",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/png/logo-white.png",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\png\\logo-white.png"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-black.svg",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-black.svg",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/svg/logo-black.svg",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\svg\\logo-black.svg"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-color.svg",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-color.svg",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/svg/logo-color.svg",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\svg\\logo-color.svg"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-no-background.svg",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-no-background.svg",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/svg/logo-no-background.svg",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\svg\\logo-no-background.svg"
     },
     {
-      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-white.svg",
+      "Identity": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\logo\\svg\\logo-white.svg",
       "SourceId": "Nizami",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\wwwroot\\",
       "BasePath": "_content/Nizami",
       "RelativePath": "logo/svg/logo-white.svg",
       "AssetKind": "All",

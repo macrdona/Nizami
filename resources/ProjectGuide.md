@@ -46,7 +46,25 @@ Install SQL Server using this link: https://go.microsoft.com/fwlink/?LinkID=8666
 
 Install Microsoft SQL Server Management: https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 
-    - Connect c# program to database and query database: https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-core?view=azuresql
+Connect c# program to database and query database: https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-core?view=azuresql
+
+```
+Setup Database 
+1. Download SQL Server
+	- Save a copy of your connection string, instance name, sql admin
+	- to run server in command line: sqlcmd -S DESKTOP-BH62ETS\SQLEXPRESS -E
+2. Download Microsoft SQL Server Management
+	- Login as admin 
+	- Setup Database
+	- Setup Login(Under Security>Login)
+		- Assign Database to Login
+	- Setup User (Under Databases>Nizami>Security>Users)
+
+To solve error: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.) (Microsoft SQL Server, Error: 233)
+Solution: Server (Right Click) -> Properties -> Security -> Server Authentication -> SQL Server and Windows Authentication Mode.
+				
+				
+```
 
 **Extra Resources**
 

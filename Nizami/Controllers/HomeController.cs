@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Nizami.Models;
 using System.Diagnostics;
+using Nizami.Services;
 
 namespace Nizami.Controllers
 {
@@ -14,7 +15,7 @@ namespace Nizami.Controllers
         }
 
         public IActionResult Index()
-        {
+        { 
             return View();
         }
 

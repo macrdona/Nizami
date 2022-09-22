@@ -27,4 +27,8 @@
     <None Include="wwwroot\logo\svg\logo-white.svg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
 </Project>
