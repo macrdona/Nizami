@@ -11,7 +11,6 @@ namespace Nizami.Services
             var configuration = getConfiguration();
             //creates a database connection
             connection = new SqlConnection(configuration.GetSection("ConnectionStrings").GetSection("Nizami").Value);
-            Debug.WriteLine(configuration.GetSection("ConnectionStrings").GetSection("Nizami").Value);
         }
 
         //returns the configuration data in appsettings.json

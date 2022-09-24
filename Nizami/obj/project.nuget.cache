@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S6/zdlGsmM4JxuiwiUaNUootQcrKXPCSUU/+kJR0pX1HjvQ3PFRx4WkBYMpJDsbLCjvSJlvYGtbFrqvzW92z3Q==",
+  "dgSpecHash": "BMgk+5rmpRdsKRtYrwThsoDIOWUqMemWXkl7ASc8nrfDGPI5nWm/n1CdpyEAhgvZSSw2MTJx1k8VpUoF7hm6Dg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami\\Nizami.csproj",
+  "projectFilePath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabim\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\gabim\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
