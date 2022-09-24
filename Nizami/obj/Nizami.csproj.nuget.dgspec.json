@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami.csproj": {}
+    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami(dotnet 3.1)\\Nizami\\Nizami.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami.csproj": {
+    "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami(dotnet 3.1)\\Nizami\\Nizami.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami.csproj",
+        "projectUniqueName": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami(dotnet 3.1)\\Nizami\\Nizami.csproj",
         "projectName": "Nizami",
-        "projectPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\Nizami.csproj",
+        "projectPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami(dotnet 3.1)\\Nizami\\Nizami.csproj",
         "packagesPath": "C:\\Users\\gabim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami\\Nizami\\obj\\",
+        "outputPath": "C:\\Users\\gabim\\Documents\\Software Development\\Dotnet\\Nizami(dotnet 3.1)\\Nizami\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,9 +37,13 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.28, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"

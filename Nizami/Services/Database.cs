@@ -1,11 +1,13 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.IO;
+
 namespace Nizami.Services
 {
     public class Database
     {
-        private static SqlConnection? connection;
+        private static SqlConnection connection;
         public Database()
         {
             var configuration = getConfiguration();
