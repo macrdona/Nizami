@@ -75,6 +75,8 @@ public class PeopleController : Controller
 **Creating an MVC Web Application (Visual Studio)**
 
 - https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?WT.mc_id=dotnet-35129-website&view=aspnetcore-6.0&tabs=visual-studio
+- https://ibjects.medium.com/learning-asp-net-core-3-1-mvc-from-scratch-b6f3a5cc45b4
+- https://www.c-sharpcorner.com/article/creating-user-registration-form-in-asp-net-core-mvc-web-application/
 
 # **Git and GitHub**
 
@@ -108,6 +110,12 @@ Link: https://web.dev/
 
 I believe this will aid us in the development of our project. This page contains some articles and examples on how to make our website better in terms of functionality and design. 
 
+**Codeply**
+
+Link: https://www.codeply.com/
+
+This website is useful for practicing HTML, CSS, JS and Bootstrap. You are able to use existing templates or create new ones and test the code in an online environment.
+
 # **Databases** 
 
 **SQL Express Database**
@@ -136,7 +144,22 @@ Solution: Server (Right Click) -> Properties -> Security -> Server Authenticatio
 				
 ```
 
+# **Data Generator**
+
+Link: https://www.mockaroo.com/
+
+- Product Table settings
+  - ProductID(Number)
+  - Name(Product(Grocery))
+  - Descriptions(Paragraphs)
+  - Price(Number)
+  - Category(Department(Retail))
+  - Image(Dummy Image URL)
+
+
 # **Extra Resources**
+
+Bootstrap Cheat-Sheet: https://bootstrap-cheatsheet.themeselection.com/, https://mdbootstrap.com/docs/standard/forms/search/
 
 Frontend: https://www.developerdrive.com/18-learning-resources-for-front-end-developers/
 

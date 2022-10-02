@@ -10,6 +10,10 @@
 @section Header{
     <!--Header and buttons-->
 	<a class="navbar navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nizami</a>
+	<div class="input-group rounded">
+		<input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"/>
+		<button type="button" class="btn btn-outline-primary">Search</button>
+	</div>
 	<div class="navbar navbar-custom ms-auto">
 		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
 		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">Log In</button>
@@ -92,7 +96,22 @@
 }
 
 @section Body{
-	<div class="bg-image"></div>
+	<div class="container-sm">
+		<div class="row">
+			<h2 class="text-center">Products</h2>
+			@model IEnumerable<Product>
+			@foreach (var p in Model)
+			{
+				<div class="col-sm-4" id="item">
+					<h3>@p.Name</h3>
+					@p.Description
+					<h4>@p.Price.ToString("c")</h4>
+				</div>
+			}
+		</div>
+	</div>
+	<!--<div class="bg-image"></div>-->
+
 	<script src="~/js/index.js" asp-append-version="true" defer></script>
 }
 
@@ -104,40 +123,18 @@
 		</section>
 			
 		<section class="footer-subsection">
-				
-			<div class="container text-center text-md-start mt-5">     
-				<div class="row mt-3">
-						
-					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-						<h6 class="text-uppercase fw-bold mb-4">Company name</h6>
-						<p>Here you can use rows and columns to organize your footer content. Lorem ipsum
-						dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-						
-					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-						<h6 class="text-uppercase fw-bold mb-4">Products</h6>
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p>
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p>
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p>
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p>
-					</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
+			</div>
 
-					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-						<h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p>
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p> 
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p>
-						<p><a href="#!" class="text-reset">[ADD LINK]</a></p>
-					</div>
-						
-					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-						<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-						<p><i class="fas fa-home me-3"></i>[ADD ITEM]</p>
-						<p><i class="fas fa-envelope me-3"></i>[ADD ITEM]</p>
-						<p><i class="fas fa-phone me-3"></i>[ADD ITEM]</p>
-						<p><i class="fas fa-print me-3"></i>[ADD ITEM]</p>
-					</div>
-				</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
+			</div>
+
+			<div class="footerlinks">
+				<p><a href="#" title="Link">Link 1 </a></p>
+				<p><a href="#" title="Link">Link 2</a></p>
+				<p><a href="#" title="Link">Link 3</a></p>
 			</div>
 		</section>
 }

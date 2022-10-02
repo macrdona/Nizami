@@ -8,6 +8,7 @@
 .navbar.navbar-custom.ms-auto button{
     background: black;
     border-color: black;
+    margin-right: 30px;
 }
 
 .btn-primary {
@@ -25,4 +26,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.input-group{
+    width: 50%;
+    margin-left: 15%;
+}
+
+#item {
+    background-color: #7FC37E;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FEFEE2;
 }

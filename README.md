@@ -1,6 +1,6 @@
-# Nizami
+# **Nizami**
 
-**Git Collaboration Workflow**
+## **Git Collaboration Workflow**
 
 What is git fetch vs pull?
 Git Fetch is the command that tells the local repository that there are changes available in the remote repository without bringing the changes into the local repository. Git Pull on the other hand brings the copy of the remote directory changes into the local repository.
@@ -15,11 +15,11 @@ A common Git collaboration workflow is:
 
 Steps 1 and 4 are a safeguard against merge conflicts, which occur when two branches contain file changes that cannot be merged with the git merge command.
 
-**Project Description**
+## **Project Description**
 
 The purpose of this project is to create an e-commerce website using the .NET Framework, which follows the Model-View-Controller(MVC) architecture. NOTE: This project was created for a college course, and it is not meant to be used for commercial purposes. 
 
-**Frameworks/Software**
+## **Frameworks/Software**
 
 This is a list of the various software and languages used to create the website.
 
@@ -27,3 +27,28 @@ This is a list of the various software and languages used to create the website.
 - HTML5, CSS, JavaScript, Bootstrap (Version 5.1)
 - Visual Studio 2022, Microsoft SQL Server Management Studio 18, SQL Server 2019
 - Git & GitHub
+
+## **Project Stages** & Tasks
+
+Refer to the **ASP.NET Core MVC with Entity Framework Tutorial** for the tasks 
+
+Completed Tasks: :white_check_mark:
+
+Incomplete Tasks:  :x:
+
+**Stage 1** 
+
+- Tasks 1 through 6:white_check_mark:
+
+**Stage 2** 
+
+- Tasks 7 through 16:white_check_mark:
+
+**Stage 3**
+
+- Preparing Database, Task 17 through 23:white_check_mark:
+
+**Stage 4**
+
+- Tasks 24 through 29:x:
+

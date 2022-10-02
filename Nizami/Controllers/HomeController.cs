@@ -2,23 +2,24 @@
 using Nizami.Models;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
-using Nizami.Services;
+using Microsoft.Extensions.Options;
 
 namespace Nizami.Controllers
 {
+    /*This class that will handle HTTP requests*/
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private IProductRepository repository;
+        public HomeController(IProductRepository repo)
         {
-            _logger = logger;
+            repository = repo;
         }
 
-        public IActionResult Index()
-        { 
-            return View();
-        }
+        //GET Index()
+        /*Index is an action method that will be called when Index.cshtml is invoked.
+        When invoked, it will return a list of prducts available in the repository*/
+        public ViewResult Index() => View(repository.Products);
+        
 
         public IActionResult Privacy()
         {

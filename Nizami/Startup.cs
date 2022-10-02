@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Nizami.Models;
+using Nizami.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace Nizami
 {
@@ -24,6 +28,12 @@ namespace Nizami
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //This method will connect our application to our Database using a connection string
+            services.AddDbContext<NizamiDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Nizami")));
+
+            //This method will allow IProductRepository to act as an interface for our database.  
+            services.AddTransient<IProductRepository, EFProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

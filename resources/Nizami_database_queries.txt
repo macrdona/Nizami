@@ -1,13 +1,28 @@
 /*Use database*/
 use Nizami;
 
-/*Creating table for user*/
+/*Creating table for users*/
 
-create table users(
-	user_id int,
-	firstname varchar(255),
-	lastname varchar(255),
-	phone_number varchar(255),
-	email varchar(255),
-	salt varchar(255),
+create table Users(
+	UserID int,
+	FirstName varchar(255),
+	LastName varchar(255),
+	PhoneNumber varchar(255),
+	Email varchar(255),
+	Salt varchar(255),
+	Username varchar(255),
+	Password varchar(255),
+	PRIMARY KEY (UserID)
+);
+
+/*Create table for products*/
+
+create table Products(
+	ProductID int,
+	Name varchar(255),
+	Description varchar(1000),
+	Price decimal,
+	Category varchar(255),
+	Image varchar(1000),
+	PRIMARY KEY (ProductID)
 );
