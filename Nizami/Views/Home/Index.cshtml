@@ -9,14 +9,18 @@
 
 @section Header{
     <!--Header and buttons-->
-	<a class="navbar navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nizami</a>
-	<div class="input-group rounded">
-		<input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"/>
-		<button type="button" class="btn btn-outline-primary">Search</button>
-	</div>
-	<div class="navbar navbar-custom ms-auto">
-		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
-		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">Log In</button>
+	<div class="container-fluid">
+		<a class="navbar navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+			<img src="/logo/png/High Resolution Logo.png" alt="" width="120" height="100" class="d-inline-block align-text-top">
+		</a>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login">Log In</button>
+		</div>
+		<form class="d-flex">
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
 	</div>
 			
 	<!--Sign Up Modal Form-->
@@ -96,45 +100,51 @@
 }
 
 @section Body{
-	<div class="container-sm">
-		<div class="row">
+	<div class="row">
+		<div class="col-4">
+			<h2>Sidebar</h2>
+			<nav class="nav flex-column" id="sidebar">
+				<a class="nav-link active" href="#">Active</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</nav>
+		</div>
+		<div class="col-8">
 			<h2 class="text-center">Products</h2>
-			@model IEnumerable<Product>
-			@foreach (var p in Model)
-			{
-				<div class="col-sm-4" id="item">
-					<h3>@p.Name</h3>
-					@p.Description
-					<h4>@p.Price.ToString("c")</h4>
-				</div>
-			}
+			<div class="row">
+				@model IEnumerable<Product>
+				@{var counter = 1;}
+				@foreach (var p in Model)
+				{
+					<div class="col-sm-4" id="item">
+						<div class="row">
+							<img src="@p.Image">
+						</div>
+						<h3>@p.Name</h3>
+						@p.Description
+						<h4>@p.Price.ToString("c")</h4>
+					</div>								
+					counter++;
+				}
+			</div>
 		</div>
 	</div>
-	<!--<div class="bg-image"></div>-->
 
 	<script src="~/js/index.js" asp-append-version="true" defer></script>
 }
 
 @section Footer{
-		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">	
-			<div class="me-5 d-none d-lg-block">
-				<span>Nizami's Information</span>
-			</div>
-		</section>
-			
-		<section class="footer-subsection">
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
-			</div>
+		<p class="col-md-4 mb-0 text-muted">© 2022 Nizami, Inc</p>
+		<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+			<img src="/logo/png/logo-no-background.png" alt="" width="80" height="70" class="d-inline-block align-text-top">
+		</a>
 
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
-			</div>
-
-			<div class="footerlinks">
-				<p><a href="#" title="Link">Link 1 </a></p>
-				<p><a href="#" title="Link">Link 2</a></p>
-				<p><a href="#" title="Link">Link 3</a></p>
-			</div>
-		</section>
+		<ul class="nav col-md-4 justify-content-end">
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+		</ul>
 }

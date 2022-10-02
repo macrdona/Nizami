@@ -15,6 +15,10 @@ A common Git collaboration workflow is:
 
 Steps 1 and 4 are a safeguard against merge conflicts, which occur when two branches contain file changes that cannot be merged with the git merge command.
 
+After pulling the files from the Git repository make sure:
+    1. That the datbase connection string is correct.
+    2. If there are any updates to the database queries, run the queries to keep the database up-to-date.
+
 ## **Project Description**
 
 The purpose of this project is to create an e-commerce website using the .NET Framework, which follows the Model-View-Controller(MVC) architecture. NOTE: This project was created for a college course, and it is not meant to be used for commercial purposes. 
