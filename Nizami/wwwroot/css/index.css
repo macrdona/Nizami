@@ -18,7 +18,22 @@
 
 .btn-primary {
     margin: 5px;
+    background-color: #7FC37E;
+    border-color: #7FC37E;
 }
+
+.btn-primary:hover {
+    background-color: #2F7739;
+    border-color: #2F7739;
+}
+
+.btn-group.float-right a:hover {
+
+    background-color: #2F7739;
+    border-color: #2F7739;
+}
+
+
 
 .modal-body {
     background-color: #7FC37E;
