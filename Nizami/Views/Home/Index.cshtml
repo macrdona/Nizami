@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -113,9 +114,9 @@
 		<div class="col-8">
 			<h2 class="text-center">Products</h2>
 			<div class="row">
-				@model IEnumerable<Product>
+				@model ProductsListViewModel    //Last Stopping place <Kenniece Harris>: End Part 29
 				@{var counter = 1;}
-				@foreach (var p in Model)
+				@foreach (var p in Model.Products)
 				{
 					<div class="col-sm-4" id="item">
 						<div class="row">
@@ -127,6 +128,8 @@
 					</div>								
 					counter++;
 				}
+				<div page-model="@Model.PagingInfo" page-action="Index"></div>
+
 			</div>
 		</div>
 	</div>
