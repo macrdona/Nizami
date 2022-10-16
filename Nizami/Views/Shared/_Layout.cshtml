@@ -18,10 +18,20 @@
         </nav>
     </header>
 
-    <!--This renders the content in the 'Body' section of the current page. For example, if user is currently on the index page
-        then the content in the 'Body' section of the index page will be rendered on this div.-->
     <div class="container">
-        @RenderSection("Body", false)
+        <div class="row">
+            <div class="col-4">
+                <h2>Categories</h2>
+                <nav class="nav flex-column" id="sidebar">
+                    @await Component.InvokeAsync("NavigationMenu")
+                </nav>
+            </div>
+            <div class="col-8">
+                <!--This renders the content in the 'Products' section of the current page. For example, if user is currently on the index page
+                then the content in the 'Products' section of the index page will be rendered on this div.-->
+                @RenderSection("Products", false)
+            </div>
+        </div>
     </div>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

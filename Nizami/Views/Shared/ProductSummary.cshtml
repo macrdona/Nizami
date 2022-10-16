@@ -1,0 +1,9 @@
+﻿@model Product
+<div class="col-sm-4" id="item">
+	<div class="row">
+		<img src="@Model.Image">
+	</div>
+	<h3>@Model.Name</h3>
+	@Model.Description
+	<h4>@Model.Price.ToString("c")</h4>
+</div>

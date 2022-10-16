@@ -5,6 +5,7 @@ using System.Diagnostics;
 using Microsoft.Extensions.Options;
 using System.Linq;
 using Nizami.Models.ViewModels;
+using System.ComponentModel;
 
 namespace Nizami.Controllers
 {
@@ -25,19 +26,24 @@ namespace Nizami.Controllers
         /*
          * Changed Index to show only 20 items per page
          */
-        public ViewResult Index(int page = 1)  // Beginning of Part 24 <Kenniece Harris>
+        public ViewResult Index(string category, int page = 1)  // Beginning of Part 24 <Kenniece Harris>
                  => View(new ProductsListViewModel
                  {
                      Products = repository.Products
-                                 .OrderBy(p => p.ProductID)
+                                .Where(p => category == null  || p.Category == category)
+                                .OrderBy(p => p.ProductID)
                                 .Skip((page - 1) * PageSize)
-                                 .Take(PageSize),
+                                .Take(PageSize),
                      PagingInfo = new PagingInfo
                      {
                          CurrentPage = page,
                          ItemsPerPage = PageSize,
-                         TotalItems = repository.Products.Count()
-                     }
+                         TotalItems = category == null ?
+                         repository.Products.Count() :
+                         repository.Products.Where(e =>
+                         e.Category == category).Count()
+                     },
+                     CurrentCategory = category
                  });
 
 

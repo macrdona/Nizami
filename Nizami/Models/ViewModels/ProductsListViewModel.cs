@@ -9,10 +9,11 @@ namespace Nizami.Models.ViewModels
 {
 	public class ProductsListViewModel
 	{
-       
-            public IEnumerable<Product> Products { get; set; }
-            public PagingInfo PagingInfo { get; set; }
-        
-
+       //list of products
+       public IEnumerable<Product> Products { get; set; }
+       //settings for how many products will be displayed per page
+       public PagingInfo PagingInfo { get; set; }
+       //display products based on selected category
+       public string CurrentCategory { get; set; }
     }
 }

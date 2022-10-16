@@ -1,0 +1,24 @@
+﻿@model IEnumerable<string>
+
+<div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuBotton" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter Category
+    </button>
+        <ul class="dropdown-menu" id="category-filter" aria-labelledby="dropdownMenuButton">
+
+            <li><a class="dropdown-item" asp-action="Index" asp-controller="Home" asp-route-category="">REMOVE FILTER</a></li>
+            @foreach(string category in Model)
+            {
+                <li>
+                    <a class="dropdown-item
+                        @(category == ViewBag.SelectedCategory ? "btn-primary": "btn-outline-dark")" 
+                        asp-action="Index" 
+                        asp-controller="Home" 
+                        asp-route-category="@category"
+                        asp-route-page="1" id="category-link">
+                        @category
+                    </a>
+                </li>
+            }
+        </ul>
+</div>

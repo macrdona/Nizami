@@ -11,7 +11,7 @@
 @section Header{
     <!--Header and buttons-->
 	<div class="container-fluid">
-		<a class="navbar navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+		<a class="navbar navbar-brand" id="navbar-logo" asp-area="" asp-controller="Home" asp-action="Index">
 			<img src="/logo/png/High Resolution Logo.png" alt="" width="120" height="100" class="d-inline-block align-text-top">
 		</a>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -91,7 +91,7 @@
 							</div>
 									
 							<button type="submit" class="btn btn-dark">Log In</button>
-							<p>Not a member?<button type="button" class="btn btn-primary" id="modalClose" data-bs-target="#signup" data-bs-toggle="modal">Sign Up Now</button></p>
+							<p>Not a member?<button type="button" class="btn" id="modalClose" data-bs-target="#signup" data-bs-toggle="modal">Sign Up Now</button></p>
 						</form>  
 					</div>
 				</div>     
@@ -100,41 +100,18 @@
 	</div>
 }
 
-@section Body{
+@section Products{
+	<h2 class="text-center">Products</h2>
 	<div class="row">
-		<div class="col-4">
-			<h2>Sidebar</h2>
-			<nav class="nav flex-column" id="sidebar">
-				<a class="nav-link active" href="#">Active</a>
-				<a class="nav-link" href="#">Link</a>
-				<a class="nav-link" href="#">Link</a>
-				<a class="nav-link disabled" href="#">Disabled</a>
-			</nav>
-		</div>
-		<div class="col-8">
-			<h2 class="text-center">Products</h2>
-			<div class="row">
-				@model ProductsListViewModel    //Last Stopping place <Kenniece Harris>: End Part 29
-				@{var counter = 1;}
-				@foreach (var p in Model.Products)
-				{
-					<div class="col-sm-4" id="item">
-						<div class="row">
-							<img src="@p.Image">
-						</div>
-						<h3>@p.Name</h3>
-						@p.Description
-						<h4>@p.Price.ToString("c")</h4>
-					</div>								
-					counter++;
-				}
-				<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
-					page-class="btn" page-class-normal="btn-default"
-					page-class-selected="btn-primary" class="btn-group float-right">
-				</div>
-
-
-			</div>
+		@model ProductsListViewModel
+		@foreach (var p in Model.Products)
+		{
+			//this will call the html code inside the ProductSummary partial view
+			@Html.Partial("ProductSummary", p)								
+		}
+		<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
+			page-class="btn" page-class-normal="btn-default"
+			page-class-selected="btn btn-primary" page-url-category="@Model.CurrentCategory" class="btn-group float-right" id="pageNumber">
 		</div>
 	</div>
 

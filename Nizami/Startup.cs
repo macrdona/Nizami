@@ -6,7 +6,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Nizami.Models;
-using Nizami.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +26,8 @@ namespace Nizami
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+
+            services.AddMvc(options => options.EnableEndpointRouting = false);
 
             //This method will connect our application to our Database using a connection string
             services.AddDbContext<NizamiDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Nizami")));
@@ -56,11 +56,34 @@ namespace Nizami
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            app.UseMvc(routes =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                //lists all products where category = "selected category" and moved to another page with more items
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}/Page{page:int}",
+                    defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
+                //lists all products where category = null and moved to another page with more items
+                routes.MapRoute(
+                    name: null,
+                    template: "Page{page:int}",
+                    defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
+                //lists all products where category = "selected category" and is in landing page
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}",
+                    defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
+                //lists all products where category = null and is in landing page
+                routes.MapRoute(
+                    name: null,
+                    template: "",
+                    defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
+
+                routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
         }
     }

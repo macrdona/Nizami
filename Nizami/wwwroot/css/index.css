@@ -1,39 +1,43 @@
-﻿.navbar.navbar-brand {
+﻿#navbar-logo {
     margin-left: 50px;
     font-size: 40px;
     font-family: 'Comic Sans MS';
     color: #193d2b;
 }
 
-.navbarNavAltMarkup button{
+#navbarNavAltMarkup button {
+    margin: 5px;
     background: black;
     border-color: black;
+    color: white;
 }
 
-#sidebar a{
-    border: 2px solid blue;
-    border-radius: 10px;
-    gap: 20px;
+#modalClose {
+    margin-left: 5px;
+    background: black;
+    border-color: black;
+    color: white;
 }
 
+/*btn-primary default color changed to #7FC37E*/
 .btn-primary {
+    background-color: #7FC37E !important;
+    border-color: #7FC37E !important;
+}
+
+#pageNumber button {
     margin: 5px;
-    background-color: #7FC37E;
-    border-color: #7FC37E;
 }
 
-.btn-primary:hover {
+#pageNumber.btn-primary:hover {
     background-color: #2F7739;
     border-color: #2F7739;
 }
 
-.btn-group.float-right a:hover {
-
+#pageNumber.btn-group.float-right a:hover {
     background-color: #2F7739;
     border-color: #2F7739;
 }
-
-
 
 .modal-body {
     background-color: #7FC37E;
@@ -51,3 +55,6 @@
     border: 2px solid #FEFEE2;
 }
 
+.container{
+    max-width: 1700px;
+}
