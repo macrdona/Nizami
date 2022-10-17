@@ -18,8 +18,7 @@ namespace Nizami.Components
             repository = repo;
         }
 
-        //When a category is selected, this method will be invoked and it will return a list
-        //of products based on the selected category
+        //This method returns a list of all distinct categories in the database.
         public IViewComponentResult Invoke()
         {
             /*

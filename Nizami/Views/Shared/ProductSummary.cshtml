@@ -1,19 +1,21 @@
 ﻿@model Product
-<div class="col-sm-4" id="item">
-	<div class="row">
-		<img src="@Model.Image">
+<!--This html code generates a list of cards with product info-->
+<div class="col">
+	<div class="card h-100" style="width: 18rem;" id="productCards">
+		<img src="@Model.Image" class="card-img-top h-100" alt="">
+		<div class="card-body">
+			<h3>@Model.Name</h3>
+			<p>@Model.Description</p>
+			<p>@Model.Price.ToString("c")</p>
+			<form id="@Model.ProductID" asp-action="AddToCart"
+				asp-controller="Cart" method="post">
+				<input type="hidden" asp-for="ProductID" />
+				<input type="hidden" name="returnUrl"
+						value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+				<button type="submit" class="btn btn-info btn-sm float-right">
+					Add To Cart
+				</button>
+			</form>
+		</div>
 	</div>
-	<h3>@Model.Name</h3>
-	@Model.Description
-	<h4>@Model.Price.ToString("c")</h4>
-
-	<form id="@Model.ProductID" asp-action="AddToCart"
-		  asp-controller="Cart" method="post" class="float-right m-2 p-1">
-		<input type="hidden" asp-for="ProductID" />
-		<input type="hidden" name="returnUrl"
-			   value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-		<button type="submit" class="btn btn-info btn-sm float-right">
-			Add To Cart
-		</button>
-	</form>
 </div>

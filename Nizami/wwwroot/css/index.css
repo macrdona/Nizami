@@ -1,15 +1,22 @@
-﻿#navbar-logo {
-    margin-left: 50px;
-    font-size: 40px;
-    font-family: 'Comic Sans MS';
-    color: #193d2b;
+﻿body {
+    margin: 0px;
+    background-color: #FEFEE2;
 }
 
-#navbarNavAltMarkup button {
-    margin: 5px;
-    background: black;
-    border-color: black;
-    color: white;
+header {
+    background-color: #7FC37E;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+#navbar {
+    background-color: #7FC37E;
 }
 
 #modalClose {
@@ -19,22 +26,12 @@
     color: white;
 }
 
-/*btn-primary default color changed to #7FC37E*/
-.btn-primary {
-    background-color: #7FC37E !important;
-    border-color: #7FC37E !important;
+.current-page {
+    background-color: #7FC37E;
+    border-color: #7FC37E;
 }
 
-#pageNumber button {
-    margin: 5px;
-}
-
-#pageNumber.btn-primary:hover {
-    background-color: #2F7739;
-    border-color: #2F7739;
-}
-
-#pageNumber.btn-group.float-right a:hover {
+#pageNumber a:hover {
     background-color: #2F7739;
     border-color: #2F7739;
 }
@@ -48,13 +45,16 @@
     margin-left: 15%;
 }
 
-#item {
-    background-color: #7FC37E;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #FEFEE2;
-}
-
 .container{
     max-width: 1700px;
+    margin-top: 10px;
+}
+
+#pages{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#productCards {
+    background-color: #7FC37E;
 }

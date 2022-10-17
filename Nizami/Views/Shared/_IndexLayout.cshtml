@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nizami</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Nizami.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="navbar-logo" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="/logo/png/High Resolution Logo.png" alt="" width="120" height="100" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarBasic" style="">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        @RenderSection("Header", false)
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main Body-->
+    <div class="container">
+        <div class="row">
+            <!--Sidebar will be rendered inside this div-->
+            <div class="col-xs-5 col-sm-6 col-lg-4" id="sidebarBox">
+                @await Component.InvokeAsync("NavigationMenu")
+            </div>
+            <!--Products will be rendered inside this div-->
+            <div class="col-xs-7 col-sm-6 col-lg-8" id="productBox">
+                    <h2 class="text-center">Products</h2>
+                    <!--This renders the content in the 'Products' section of the current page. For example, if user is currently on the index page
+                    then the content in the 'Products' section of the index page will be rendered on this div.-->
+                    @RenderSection("Products", false)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            @RenderSection("Footer", false)
+        </footer>
+    </div>
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/index.js" asp-append-version="true" defer></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

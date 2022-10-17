@@ -1,24 +1,40 @@
 ﻿@model IEnumerable<string>
-
+<!--This html code generates a dropdown menu that allows filtering by category-->
 <div class="dropdown">
-    <button class="btn dropdown-toggle" type="button" id="dropdownMenuBotton" data-bs-toggle="dropdown" aria-expanded="false">
-        Filter Category
+    <button class="btn btn-light dropdown-toggle" type="button" id="categoryFilter" data-bs-toggle="dropdown" aria-expanded="false">
+        Category
     </button>
-        <ul class="dropdown-menu" id="category-filter" aria-labelledby="dropdownMenuButton">
-
-            <li><a class="dropdown-item" asp-action="Index" asp-controller="Home" asp-route-category="">REMOVE FILTER</a></li>
-            @foreach(string category in Model)
-            {
-                <li>
-                    <a class="dropdown-item
-                        @(category == ViewBag.SelectedCategory ? "btn-primary": "btn-outline-dark")" 
-                        asp-action="Index" 
-                        asp-controller="Home" 
-                        asp-route-category="@category"
-                        asp-route-page="1" id="category-link">
-                        @category
-                    </a>
-                </li>
+    
+    <ul class="dropdown-menu" aria-labelledby="categoryFilter">
+        @{
+            /*
+            * Here we are checking the RouteData.Values dictionary to see if the URL is using any
+            * product's categories. Ex. /Automotive/Page1 where automotive is a category
+            * 
+            * If it is using a category(meaning the user has filtered by a specific category), 
+            * then the dropdown menu should only display the "REMOVE FILTER" option. 
+            * 
+            * Else the dropdown menu should display all the categories.
+            */
+            if (ViewContext.RouteData.Values.ContainsKey("category") == false){  
+                foreach (string category in Model)
+                {
+                    <li>
+                        <a class="dropdown-item
+                            @(category == ViewBag.SelectedCategory ? "btn btn-outline-success" : "")"
+                            asp-action="Index"
+                            asp-controller="Home"
+                            asp-route-category="@category"
+                            asp-route-page="1">
+                            @category
+                        </a>
+                    </li>
+                }
             }
-        </ul>
+            else{
+                <li><a class="dropdown-item" asp-action="Index" asp-controller="Home" asp-route-category="">REMOVE FILTER</a></li>
+            }
+        }
+    </ul>
 </div>
+

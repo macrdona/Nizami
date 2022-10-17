@@ -7,6 +7,7 @@ using Nizami.Models.ViewModels;
 
 namespace Nizami.Controllers
 {
+    //This class controls the actions on the shopping cart
     public class CartController : Controller
     {
         private IProductRepository repository;
@@ -16,6 +17,7 @@ namespace Nizami.Controllers
             repository = repo;
         }
 
+        //creates an instance of a cart
         public ViewResult Cart(string returnUrl)
         {
             return View(new CartIndexViewModel
@@ -25,6 +27,7 @@ namespace Nizami.Controllers
             });
         }
 
+        //this method adds item to cart
         public RedirectToActionResult AddToCart(int productId, string returnUrl)
         {
             Product product = repository.Products
@@ -38,6 +41,7 @@ namespace Nizami.Controllers
             return RedirectToAction("Cart", new { returnUrl });
         }
 
+        //this method returns item to cart
         public RedirectToActionResult RemoveFromCart(int productId, string returnUrl)
         {
             Product product = repository.Products
@@ -51,12 +55,14 @@ namespace Nizami.Controllers
             return RedirectToAction("Cart", new { returnUrl });
         }
 
+        //This method gets the cart with all the products currently in the cart
         private Cart GetCart()
         {
             Cart cart = HttpContext.Session.GetJson<Cart>("Cart") ?? new Cart();
             return cart;
         }
 
+        //This method safes the current instance of the cart
         private void SaveCart(Cart cart)
         {
             HttpContext.Session.SetJson("Cart", cart);

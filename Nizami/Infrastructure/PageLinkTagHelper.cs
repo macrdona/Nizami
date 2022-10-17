@@ -7,7 +7,7 @@ using Nizami.Models.ViewModels;
 using System.Collections.Generic;
 
 /*
- * Populates a div element with a elements that correspond to pages of products.
+ * Populates a div element with <a> elements that correspond to pages of products.
  */
 
 namespace Nizami.Infrastructure

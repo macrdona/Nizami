@@ -1,29 +1,16 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
-}
-
-<!--When adding a new css file, it must be enclosed on a section tag and then referenced in the layout.cshtml by using RenderSection()-->
-@section Head{
-	<link rel="stylesheet" href="~/css/index.css" asp-append-version="true"/>
 }
 
 @section Header{
     <!--Header and buttons-->
-	<div class="container-fluid">
-		<a class="navbar navbar-brand" id="navbar-logo" asp-area="" asp-controller="Home" asp-action="Index">
-			<img src="/logo/png/High Resolution Logo.png" alt="" width="120" height="100" class="d-inline-block align-text-top">
-		</a>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<li class="nav-item">
 			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
+		</li>
+		<li class="nav-item">
 			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login">Log In</button>
-		</div>
-		<form class="d-flex">
-			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success" type="submit">Search</button>
-		</form>
-	</div>
-			
+		</li>	
+
 	<!--Sign Up Modal Form-->
 	<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
 				
@@ -101,27 +88,26 @@
 }
 
 @section Products{
-	<h2 class="text-center">Products</h2>
-	<div class="row">
+	<div class="row row-cols-1 row-cols-md-3 g-4">
 		@model ProductsListViewModel
 		@foreach (var p in Model.Products)
 		{
 			//this will call the html code inside the ProductSummary partial view
 			@Html.Partial("ProductSummary", p)								
 		}
+	</div>
+	<div class="row" id="pages">
 		<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
-			page-class="btn" page-class-normal="btn-default"
-			page-class-selected="btn btn-primary" page-url-category="@Model.CurrentCategory" class="btn-group float-right" id="pageNumber">
+		 page-class="btn" page-class-normal="btn-default"
+		 page-class-selected="current-page" page-url-category="@Model.CurrentCategory" class="btn-group float-right" id="pageNumber">
 		</div>
 	</div>
-
-	<script src="~/js/index.js" asp-append-version="true" defer></script>
 }
 
 @section Footer{
 		<p class="col-md-4 mb-0 text-muted">© 2022 Nizami, Inc</p>
 		<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-			<img src="/logo/png/logo-no-background.png" alt="" width="80" height="70" class="d-inline-block align-text-top">
+			<img src="/logo/png/logo-no-background.png" alt="" width="40" height="32" class="d-inline-block align-text-top">
 		</a>
 
 		<ul class="nav col-md-4 justify-content-end">

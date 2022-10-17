@@ -58,13 +58,17 @@ Incomplete Tasks:  :x:
 
 **Stage 5**
 
-- Tasks 31 through 32:white_check_mark:
+- Tasks 31 through 40:white_check_mark:
 
 **Stage 6**
 
-- Tasks 33 through 40:x: Finished up to task 36
+- Tasks 41 through 43:x:
 
 **Stage 7**
 
-- Tasks 41 through 43:x:
+- Tasks 44 through 49:x:
+
+**Stage 8**
+
+- Tasks 50 through 59:x:
 
