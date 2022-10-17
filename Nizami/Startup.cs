@@ -27,7 +27,9 @@ namespace Nizami
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddMvc(options => options.EnableEndpointRouting = false).AddNewtonsoftJson();
+            services.AddMemoryCache();
+            services.AddSession();
 
             //This method will connect our application to our Database using a connection string
             services.AddDbContext<NizamiDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Nizami")));
@@ -55,6 +57,8 @@ namespace Nizami
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseMvc(routes =>
             {
