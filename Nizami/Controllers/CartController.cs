@@ -5,6 +5,7 @@ using Nizami.Infrastructure;
 using Nizami.Models;
 using Nizami.Models.ViewModels;
 
+// Cart class has been modified to a simpler form <Kenniece>
 namespace Nizami.Controllers
 {
     //This class controls the actions on the shopping cart
@@ -12,9 +13,12 @@ namespace Nizami.Controllers
     {
         private IProductRepository repository;
 
-        public CartController(IProductRepository repo)
+        private Cart cart;
+
+        public CartController(IProductRepository repo, Cart cartService)
         {
             repository = repo;
+            this.cart = cartService;
         }
 
         //creates an instance of a cart
@@ -22,7 +26,7 @@ namespace Nizami.Controllers
         {
             return View(new CartIndexViewModel
             {
-                Cart = GetCart(),
+                Cart = cart,
                 ReturnUrl = returnUrl
             });
         }
@@ -34,9 +38,9 @@ namespace Nizami.Controllers
             .FirstOrDefault(p => p.ProductID == productId);
             if (product != null)
             {
-                Cart cart = GetCart();
+                
                 cart.AddItem(product, 1);
-                SaveCart(cart);
+               
             }
             return RedirectToAction("Cart", new { returnUrl });
         }
@@ -48,9 +52,9 @@ namespace Nizami.Controllers
             .FirstOrDefault(p => p.ProductID == productId);
             if (product != null)
             {
-                Cart cart = GetCart();
+                
                 cart.RemoveLine(product);
-                SaveCart(cart);
+                
             }
             return RedirectToAction("Cart", new { returnUrl });
         }
