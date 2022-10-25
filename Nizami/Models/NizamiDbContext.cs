@@ -10,5 +10,6 @@ namespace Nizami.Models
         public NizamiDbContext(DbContextOptions<NizamiDbContext> options) : base(options) { }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Orders> Orders { get; set; }
     }
 }
