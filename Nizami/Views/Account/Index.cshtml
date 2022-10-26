@@ -1,0 +1,40 @@
+﻿@model IEnumerable<AppUser>
+@{
+    ViewBag.Title = "User Accounts";
+    Layout = "_AdminLayout";
+}
+<div class="text-danger" asp-validation-summary="ModelOnly"></div>
+<table class="table table-condensed table-bordered">
+    <tr>
+        <!--<th>ID</th>-->
+        <th>UserName</th>
+        <th>Email</th>
+        <!--<th>Password</th>-->
+    </tr>
+    @if (Model.Count() == 0)
+    {
+        <tr>
+            <td colspan="3" class="text-center">
+                No User Accounts
+            </td>
+        </tr>
+    }
+    else
+    {
+        foreach (AppUser user in Model)
+        {
+            <tr>
+                <!--<td>@user.Id</td>-->
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <!--<td>@user.PasswordHash</td>-->
+                <td>
+                    <a class="btn btn-success" asp-controller="Account" asp-action="Edit" asproute-id="@user.Id">Edit</a>
+                    <a class="btn btn-danger" asp-controller="Account" asp-action="Delete" asproute-id="@user.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    }
+</table>
+<a class="btn btn-primary" asp-action="Create">Create</a>
+<a class="btn btn-primary" asp-controller="Account" asp-action="Index">Home</a>

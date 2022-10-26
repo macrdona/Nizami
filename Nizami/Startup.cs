@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Nizami.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,10 @@ namespace Nizami
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp)); 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IOrderRepository, EFOrderRepository>();
+
+            services.AddIdentity<AppUser, IdentityRole<Guid>>()
+                .AddEntityFrameworkStores<NizamiDbContext>()
+                .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +65,7 @@ namespace Nizami
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseSession();

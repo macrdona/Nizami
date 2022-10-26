@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Nizami.Models;
 using System.Linq;
 
@@ -12,9 +13,11 @@ namespace Nizami.Controllers
             repository = repoService; cart = cartService;
         }
 
+        [Authorize]
         public ViewResult List() => View(repository.Orders.Where(o => !o.Shipped));
 
         [HttpPost]
+        [Authorize]
         public IActionResult MarkShipped(int orderID)
         {
             Orders order = repository.Orders.FirstOrDefault(o => o.OrderID == orderID);

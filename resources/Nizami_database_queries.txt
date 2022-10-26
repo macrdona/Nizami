@@ -28,13 +28,28 @@ create table Products(
 );
 
 
+
 /*Adding Tables Orders and Cartline*/
 
 EntityFrameworkCore\Add-Migration Orders
 and you do EntityFrameworkCore\Update-Database afterwards
 
 
+
 /*Update Table Orders to add Shipping*/
 
 Alter table Orders
 add Shipping bit;
+
+
+
+/*Adding Identity Table*/
+
+EntityFrameworkCore\Add-Migration Identity
+EntityFrameworkCore\Update-Database
+
+
+
+
+
+
