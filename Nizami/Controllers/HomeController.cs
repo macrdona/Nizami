@@ -26,7 +26,7 @@ namespace Nizami.Controllers
         /*
          * Changed Index to show only 20 items per page
          */
-        public ViewResult Index(string category, int page = 1)  // Beginning of Part 24 <Kenniece Harris>
+        public ViewResult Index(string category, int page = 1)
                  => View(new ProductsListViewModel
                  {
                      Products = repository.Products
@@ -45,9 +45,6 @@ namespace Nizami.Controllers
                      },
                      CurrentCategory = category
                  });
-
-
-
 
         public IActionResult Privacy()
         {

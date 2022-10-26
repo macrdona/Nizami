@@ -7,5 +7,9 @@ namespace Nizami.Models
     {
         //IEnumerable is a generic interface which allows looping over generic or non-generic lists
         IEnumerable<Product> Products { get; }
+
+        void SaveProduct(Product product);
+
+        Product DeleteProduct(int productID);
     }
 }

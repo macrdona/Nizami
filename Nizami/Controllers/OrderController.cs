@@ -11,8 +11,26 @@ namespace Nizami.Controllers
         { 
             repository = repoService; cart = cartService;
         }
+
+        public ViewResult List() => View(repository.Orders.Where(o => !o.Shipped));
+
+        [HttpPost]
+        public IActionResult MarkShipped(int orderID)
+        {
+            Orders order = repository.Orders.FirstOrDefault(o => o.OrderID == orderID);
+
+            if (order != null)
+            {
+                order.Shipped = true;
+                repository.UpdateOrder(order, orderID);
+
+            }
+            return RedirectToAction(nameof(List));
+        }
+
         public ViewResult Checkout() => View(new Orders());
 
+        //if products exists, returns a list of items in cart
         [HttpPost] 
         public IActionResult Checkout(Orders order) 
         { 
@@ -23,7 +41,9 @@ namespace Nizami.Controllers
          
             if (ModelState.IsValid) 
             {
-                order.Lines = cart.Lines.ToArray(); 
+                order.Lines = cart.Lines.ToArray();
+                //sets default value of shipped to false
+                order.Shipped = false;
                 repository.SaveOrder(order); 
                 return RedirectToAction(nameof(Completed)); 
             } 

@@ -26,3 +26,15 @@ create table Products(
 	Image varchar(1000),
 	PRIMARY KEY (ProductID)
 );
+
+
+/*Adding Tables Orders and Cartline*/
+
+EntityFrameworkCore\Add-Migration Orders
+and you do EntityFrameworkCore\Update-Database afterwards
+
+
+/*Update Table Orders to add Shipping*/
+
+Alter table Orders
+add Shipping bit;
