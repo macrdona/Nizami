@@ -20,6 +20,7 @@ namespace Nizami.Infrastructure
         {
             urlHelperFactory = helperFactory;
         }
+
         [ViewContext]
         [HtmlAttributeNotBound]
         public ViewContext ViewContext { get; set; }
@@ -33,8 +34,8 @@ namespace Nizami.Infrastructure
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
         public string PageClassSelected { get; set; }
-        public override void Process(TagHelperContext context,
-        TagHelperOutput output)
+
+        public override void Process(TagHelperContext context,TagHelperOutput output)
         {
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
 

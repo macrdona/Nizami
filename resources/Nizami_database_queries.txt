@@ -1,54 +1,13 @@
-/*Use database*/
-use Nizami;
+1. Creating tables in the Database:
+	EntityFrameworkCore\Add-Migration Identity
+	EntityFrameworkCore\Update-Database
 
-/*Creating table for users*/
-
-create table Users(
-	UserID int,
-	FirstName varchar(255),
-	LastName varchar(255),
-	PhoneNumber varchar(255),
-	Email varchar(255),
-	Salt varchar(255),
-	Username varchar(255),
-	Password varchar(255),
-	PRIMARY KEY (UserID)
-);
-
-/*Create table for products*/
-
-create table Products(
-	ProductID int,
-	Name varchar(255),
-	Description varchar(1000),
-	Price decimal,
-	Category varchar(255),
-	Image varchar(1000),
-	PRIMARY KEY (ProductID)
-);
+2. Query the Product table using Products_Query to fill out the products table. 
 
 
-
-/*Adding Tables Orders and Cartline*/
-
-EntityFrameworkCore\Add-Migration Orders
-and you do EntityFrameworkCore\Update-Database afterwards
-
-
-
-/*Update Table Orders to add Shipping*/
-
-Alter table Orders
-add Shipping bit;
-
-
-
-/*Adding Identity Table*/
-
-EntityFrameworkCore\Add-Migration Identity
-EntityFrameworkCore\Update-Database
-
-
+3. Insert default order into Orders with product_id of 0
+insert into Orders(OrderID,Shipped,Name,Line1,Line2,Line3,City,State,Zip,Country,GiftWrap) 
+values(0,1,'','','','','','',0,'',0)
 
 
 

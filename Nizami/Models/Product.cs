@@ -6,7 +6,7 @@ namespace Nizami.Models
     //This class is a data model representation of each of the products in the web page
     public class Product
     {
-        
+        [Key]
         public int ProductID { get; set; }
 
         [Required(ErrorMessage = "Please enter a product name")]

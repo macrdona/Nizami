@@ -13,8 +13,8 @@ namespace Nizami.Controllers
     {
         private UserManager<AppUser> userManager;
         private SignInManager<AppUser> signInManager;
-        public AccountController(UserManager<AppUser> userMgr,
-        SignInManager<AppUser> signInMgr)
+
+        public AccountController(UserManager<AppUser> userMgr, SignInManager<AppUser> signInMgr)
         {
             userManager = userMgr;
             signInManager = signInMgr;
@@ -55,7 +55,7 @@ namespace Nizami.Controllers
 
         // GET: /<controller>/
         [AllowAnonymous]
-        public ViewResult Index()
+        public ViewResult Accounts()
         {
             return View(userManager.Users);
         }
@@ -83,7 +83,7 @@ namespace Nizami.Controllers
                 if (result.Succeeded)
                 {
                     //await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Login");
                 }
                 else
                 {
@@ -110,7 +110,7 @@ namespace Nizami.Controllers
                 IdentityResult result = await userManager.DeleteAsync(user);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Accounts");
                 }
                 else
                 {
@@ -132,7 +132,7 @@ namespace Nizami.Controllers
             }
             else
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Accounts");
             }
         }
     }
