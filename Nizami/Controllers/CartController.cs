@@ -57,19 +57,6 @@ namespace Nizami.Controllers
             }
             return RedirectToAction("Cart", new { returnUrl });
         }
-
-        //This method gets the cart with all the products currently in the cart
-        private Cart GetCart()
-        {
-            Cart cart = HttpContext.Session.GetJson<Cart>("Cart") ?? new Cart();
-            return cart;
-        }
-
-        //This method safes the current instance of the cart
-        private void SaveCart(Cart cart)
-        {
-            HttpContext.Session.SetJson("Cart", cart);
-        }
     }
 }
 
