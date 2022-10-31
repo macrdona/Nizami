@@ -40,17 +40,12 @@ header {
     background-color: #7FC37E;
 }
 
-.input-group{
-    width: 50%;
-    margin-left: 15%;
-}
-
-.container{
+.container {
     max-width: 1700px;
     margin-top: 10px;
 }
 
-#pages{
+#pages {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -58,5 +53,3 @@ header {
 #productCards {
     background-color: #7FC37E;
 }
-
-

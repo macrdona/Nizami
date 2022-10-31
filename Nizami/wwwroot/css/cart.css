@@ -1,0 +1,19 @@
+﻿body {
+    background-color: #FEFEE2;
+}
+
+.container {
+    background-color: #7FC37E;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+table {
+    border-bottom: hidden;
+}
+
+#heading {
+    margin-top: 20px;
+}

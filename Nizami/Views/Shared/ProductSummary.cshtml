@@ -1,15 +1,20 @@
 ﻿@using Nizami.Infrastructure
 @model Product
+
 <!--This html code generates a list of cards with product info-->
 <div class="col">
-	<div class="card h-100" style="width: 18rem;" id="productCards">
-		<img src="@Model.Image" class="card-img-top h-100" alt="">
+	<div class="card h-100" id="productCards">
+
+		<img src="@Model.Image" class="card-img-top h-50" alt="">
+
 		<div class="card-body">
+
 			<h3>@Model.Name</h3>
 			<p>@Model.Description</p>
 			<p>@Model.Price.ToString("c")</p>
+
 			<form id="@Model.ProductID" asp-action="AddToCart"
-				asp-controller="Cart" method="post">
+				  asp-controller="Cart" method="post">
 				<input type="hidden" asp-for="ProductID" />
 				<input type="hidden" name="returnUrl"
 					   value="@ViewContext.HttpContext.Request.Path.ToString()" />
@@ -17,7 +22,7 @@
 					Add To Cart
 				</button>
 			</form>
-			<!--Value equals to current url-->
+
 		</div>
 	</div>
 </div>
