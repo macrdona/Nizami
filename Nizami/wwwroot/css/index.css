@@ -40,6 +40,11 @@ header {
     background-color: #7FC37E;
 }
 
+.input-group{
+    width: 50%;
+    margin-left: 15%;
+}
+
 .container{
     max-width: 1700px;
     margin-top: 10px;

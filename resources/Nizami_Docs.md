@@ -26,6 +26,7 @@
     |Method|Parameters|Return|Description|
     |-----------|-----------|-----------|-----------|
     |NavigationMenuViewComponent|IProductRepository|void|Initializes variable **repository** with a list of all products in the database.|
+    |||||
     |Invoke|none|IViewComponentResult|This method is invoked by @await Component.InvokeAsync("NavigationMenu") in the _IndexLayout.cshtml View. This method then searches for NavigationMenu/Default.cshtml in the view folder, and passes it a list of all distinct categories.|
     |||||
 
