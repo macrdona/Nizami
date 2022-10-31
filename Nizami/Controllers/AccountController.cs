@@ -20,6 +20,7 @@ namespace Nizami.Controllers
             signInManager = signInMgr;
         }
 
+        //HTTP GET
         [AllowAnonymous]
         public ViewResult Login(string returnUrl)
         {
@@ -95,6 +96,7 @@ namespace Nizami.Controllers
             }
             return View(model);
         }
+
         private void AddErrors(IdentityResult result)
         {
             foreach (IdentityError error in result.Errors)
@@ -102,6 +104,7 @@ namespace Nizami.Controllers
                 ModelState.TryAddModelError("", error.Description);
             }
         }
+
         public async Task<IActionResult> Delete(string id)
         {
             AppUser user = await userManager.FindByIdAsync(id);
@@ -121,8 +124,9 @@ namespace Nizami.Controllers
             {
                 ModelState.AddModelError("", "User Not Found");
             }
-            return View("Index", userManager.Users);
+            return View("Accounts", userManager.Users);
         }
+
         public async Task<IActionResult> Edit(string id)
         {
             AppUser user = await userManager.FindByIdAsync(id);

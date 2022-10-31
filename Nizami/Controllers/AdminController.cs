@@ -9,6 +9,7 @@ namespace Nizami.Controllers
     public class AdminController : Controller
     {
         private IProductRepository repository;
+
         public AdminController(IProductRepository repo)
         {
             repository = repo;
