@@ -134,3 +134,28 @@ The default view name for a view component is Default, which means view files wi
     |Checkout|None|ViewResult|HTTP GET method that is invoked when the user clicks ont thec 'Checkout' button on the shopping cart. Return an instance of the Order object to the Checkout View.|
     |Checkout|Orders|IActionResult|HTTP POST method which is invoked when user submits order. Checks if the cart is empty, it so then it send an error to the user. It also checks if order submitted is validated by the Model, if so the orders is processed and user is redirected to Completed View.|
     |Completed|None|ViewResult|HTTP GET method which is invoked when directed to 'Order/Completed' url. This method clears shopping cart and then returns Completed View.|
+    
+# Views
+
+<dl>
+	<dd>MVC views are responsible for displaying content to the user.</dd>
+<dl>
+
+## Razor Views / CSHTML Files 
+
+|File Name|Descritpion|
+|------------|------------|
+|Cart| Displays the name, price, and quantity of the items the user has added to the cart with a remove button for each item. Users can also either got to the checkout page or continuing shopping when pressing either button.|
+|Index| Displays the home page with a navbar located at the top that has a search bar, sign up or login option, the shopping cart, and the NIZAMI LOGO. Also displays all product options in the center with an add to cart feature for each product and a filter option located to the left. Displays buttons at the page button at the bottom to move to another page and another navbar for the Home,Features, Pricing, FAQS, and About pages.|
+|Privacy| Display the privacy policy for NIZAMI.|
+|Checkout| Displays the checkout page check out page where users can enter their name, adress and choose to have the item gift wrapped. Users can the click the complete order button to finish the order.|
+|Completed| Displays that the order has been completed.|
+|Default(CartSummary)| Specifically displays the cart button and total for the Cart page.|
+|Default(NavigationMenu)| Specifically Displays the category button with a dropdown menu on the Index page.|
+|_CartLayout|Renders the body section of the Cart|
+|_IndexLayout| Renders the body section of the Index/Home page.|
+|_ValidationScriptsPartial|scripts for validating user input for the login,signup, and checkout pages.|
+|Error| Displays Error when something has gone wrong with loading the page.|
+|ProductSummary| Generates the list of products to be displayed in Index/ Home page.|
+|_ViewImports| Makes directives available for all files within the View folder.|
+|_ViewStart| Will either make the layout (_IndexLayout) for the index page or the cart layout (_CartLayout) for the cart page as the default.|
