@@ -1,0 +1,39 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+	Layout = "IndexLayout";
+}
+
+@section Header{
+	<li class="nav-item">@await Component.InvokeAsync("CartSummary")</li>
+}
+
+@section Products{
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		@model ProductsListViewModel
+		@foreach (var p in Model.Products)
+		{
+			//this will call the html code inside the ProductSummary partial view
+			@Html.Partial("ProductSummary", p)
+		}
+	</div>
+	<div class="row" id="pages">
+		<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
+			page-class="btn" page-class-normal="btn-default"
+			page-class-selected="current-page" page-url-category="@Model.CurrentCategory" class="btn-group float-right" id="pageNumber">
+		</div>
+	</div>
+}
+
+@section Footer{
+	<p class="col-md-4 mb-0 text-muted">© 2022 Nizami, Inc</p>
+	<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+		<img src="/logo/png/logo-no-background.png" alt="" width="40" height="32" class="d-inline-block align-text-top">
+	</a>
+
+	<ul class="nav col-md-4 justify-content-end">
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+	</ul>
+}
