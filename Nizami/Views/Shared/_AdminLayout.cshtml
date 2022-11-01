@@ -19,7 +19,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>@ViewBag.Title</h4>
-                <a class="btn btn-sm btn-primary float-right" asp-action="Logout" aspcontroller="Account">Log Out</a>
+                @RenderSection("Logout", false)
                 </div>
                 <div class="card-body">
                     @if (TempData["message"] != null)

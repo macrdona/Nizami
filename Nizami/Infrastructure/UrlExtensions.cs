@@ -20,8 +20,10 @@ namespace Nizami.Infrastructure
 
         public static string AdminLogin(this HttpRequest request) => "/Admin/ProductList";
 
-        public static string UserSignUp(this HttpRequest request) => "/Account/UserSignUp";
+        public static string UserSignUp(this HttpRequest request) => "/Home/PostLogin";
 
-        public static string UserLogin(this HttpRequest request) => "/Account/UserLogin";
+        public static string UserLogin(this HttpRequest request) => "/Home/PostLogin";
+
+        public static string HomePage(this HttpRequest request) => "/Home/Index";
     }
 }

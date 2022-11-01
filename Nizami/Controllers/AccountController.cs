@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Nizami.Models.ViewModels;
 using Nizami.Models;
+using Nizami.Infrastructure;
 
 namespace Nizami.Controllers
 {
@@ -22,7 +23,7 @@ namespace Nizami.Controllers
 
         //HTTP GET
         [AllowAnonymous]
-        public ViewResult Login(string returnUrl)
+        public ViewResult AdminLogin(string returnUrl)
         {
             return View(new LoginModel{ReturnUrl = returnUrl});
         }
@@ -30,7 +31,7 @@ namespace Nizami.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginModel loginModel)
+        public async Task<IActionResult> AdminLogin(LoginModel loginModel)
         {
             if (ModelState.IsValid)
             {
@@ -105,9 +106,9 @@ namespace Nizami.Controllers
         }
 
         [AllowAnonymous]
-        public ViewResult UserSignUp()
+        public ViewResult UserSignUp(string returnUrl)
         {
-            return View();
+            return View(new LoginModel { ReturnUrl = returnUrl });
         }
 
         //POST: Account/Create
@@ -127,7 +128,7 @@ namespace Nizami.Controllers
                 if (result.Succeeded)
                 {
                     //await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("UserLogin");
+                    return Redirect(model?.ReturnUrl ?? "");
                 }
                 else
                 {

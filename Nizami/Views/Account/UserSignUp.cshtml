@@ -9,7 +9,8 @@
 <div class="container" id="signupForm">
 	<h1 class="text-center">Sign Up</h1>
 
-	<form method="post" asp-action="UserSignUp" asp-antiforgery="true" class="form-horizontal" signupForm>
+	<form method="post" asp-action="UserSignUp" asp-controller="Account" asp-antiforgery="true" class="form-horizontal">
+		<input type="hidden" asp-for="ReturnUrl" />
 		<div class="form-group">
 			<label class="control-label" asp-for="UserName">User Name:</label>
 			<input class="form-control" asp-for="UserName" />
@@ -26,8 +27,13 @@
 			<div class="col-sm-offset-2">
 				<button type="submit" class="btn btn-primary">Create</button>
 				<button type="reset" class="btn btn-primary">Reset</button>
-				<a asp-action="UserLogin" class="btn btn-primary">Cancel</a>
 			</div>
 		</div>
+	</form>
+
+	<form asp-action="Index" asp-controller="Home">
+		<button type="submit" class="btn btn-info btn-sm float-right">
+			Return
+		</button>
 	</form>
 </div>

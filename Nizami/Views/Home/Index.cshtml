@@ -24,7 +24,7 @@
 		@foreach (var p in Model.Products)
 		{
 			//this will call the html code inside the ProductSummary partial view
-			@Html.Partial("ProductSummary", p)								
+			@Html.Partial("ProductSummary/Default", p)								
 		}
 	</div>
 	<div class="row" id="pages">
@@ -43,7 +43,7 @@
 
 		<ul class="nav col-md-4 justify-content-end">
 			<li class="nav-item">
-				<a class="nav-link px-2 text-muted" asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewContext.HttpContext.Request.AdminLogin()">
+				<a class="nav-link px-2 text-muted" asp-controller="Account" asp-action="AdminLogin" asp-route-returnurl="@ViewContext.HttpContext.Request.AdminLogin()">
 					Admin Login
 				</a>
 			</li>

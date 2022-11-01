@@ -1,6 +1,6 @@
 ﻿@{
 	ViewData["Title"] = "Home Page";
-	Layout = "IndexLayout";
+	Layout = "_IndexLayout";
 }
 
 @section Header{
@@ -13,7 +13,7 @@
 		@foreach (var p in Model.Products)
 		{
 			//this will call the html code inside the ProductSummary partial view
-			@Html.Partial("ProductSummary", p)
+			@Html.Partial("ProductSummary/PostLogin", p)
 		}
 	</div>
 	<div class="row" id="pages">

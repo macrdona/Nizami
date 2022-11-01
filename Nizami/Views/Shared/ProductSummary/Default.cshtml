@@ -12,17 +12,6 @@
 			<h3>@Model.Name</h3>
 			<p>@Model.Description</p>
 			<p>@Model.Price.ToString("c")</p>
-
-			<form id="@Model.ProductID" asp-action="AddToCart"
-				  asp-controller="Cart" method="post">
-				<input type="hidden" asp-for="ProductID" />
-				<input type="hidden" name="returnUrl"
-					   value="@ViewContext.HttpContext.Request.Path.ToString()" />
-				<button type="submit" class="btn btn-info btn-sm float-right">
-					Add To Cart
-				</button>
-			</form>
-
 		</div>
 	</div>
 </div>
