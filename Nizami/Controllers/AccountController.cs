@@ -61,42 +61,6 @@ namespace Nizami.Controllers
             return View(userManager.Users);
         }
 
-        [AllowAnonymous]
-        public ViewResult Create()
-        {
-            return View();
-        }
-
-        //POST: Account/Create
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(LoginModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                AppUser user = new AppUser
-                {
-                    UserName = model.UserName,
-                    Email = model.Email
-                };
-                IdentityResult result = await userManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    //await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Login");
-                }
-                else
-                {
-                    foreach (IdentityError error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
-                }
-            }
-            return View(model);
-        }
-
         private void AddErrors(IdentityResult result)
         {
             foreach (IdentityError error in result.Errors)
@@ -139,6 +103,71 @@ namespace Nizami.Controllers
                 return RedirectToAction("Accounts");
             }
         }
+
+        [AllowAnonymous]
+        public ViewResult UserSignUp()
+        {
+            return View();
+        }
+
+        //POST: Account/Create
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UserSignUp(LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                AppUser user = new AppUser
+                {
+                    UserName = model.UserName,
+                    Email = model.Email
+                };
+                IdentityResult result = await userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    //await signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("UserLogin");
+                }
+                else
+                {
+                    foreach (IdentityError error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+            return View(model);
+        }
+
+        //HTTP GET
+        [AllowAnonymous]
+        public ViewResult UserLogin(string returnUrl)
+        {
+            return View(new LoginModel { ReturnUrl = returnUrl });
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UserLogin(LoginModel loginModel)
+        {
+            if (ModelState.IsValid)
+            {
+                AppUser user = await userManager.FindByEmailAsync(loginModel.Email);
+                if (user != null)
+                {
+                    await signInManager.SignOutAsync();
+                    if ((await signInManager.PasswordSignInAsync(user, loginModel.Password, false, false)).Succeeded)
+                    {
+                        return Redirect(loginModel?.ReturnUrl ?? "");
+                    }
+                }
+            }
+            ModelState.AddModelError("", "Invalid name or password");
+            return View(loginModel);
+        }
+
     }
 }
 

@@ -1,0 +1,33 @@
+﻿@model LoginModel
+@{
+	Layout = "_FormLayout";
+}
+
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<div class="container" id="signupForm">
+	<h1 class="text-center">Sign Up</h1>
+
+	<form method="post" asp-action="UserSignUp" asp-antiforgery="true" class="form-horizontal" signupForm>
+		<div class="form-group">
+			<label class="control-label" asp-for="UserName">User Name:</label>
+			<input class="form-control" asp-for="UserName" />
+		</div>
+		<div class="form-group">
+			<label class="control-label" asp-for="Email">Email:</label>
+			<input class="form-control" asp-for="Email" />
+		</div>
+		<div class="form-group">
+			<label class="control-label" asp-for="Password">Password:</label>
+			<input class="form-control" asp-for="Password" type="password" />
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2">
+				<button type="submit" class="btn btn-primary">Create</button>
+				<button type="reset" class="btn btn-primary">Reset</button>
+				<a asp-action="UserLogin" class="btn btn-primary">Cancel</a>
+			</div>
+		</div>
+	</form>
+</div>

@@ -19,13 +19,6 @@ header {
     background-color: #7FC37E;
 }
 
-#modalClose {
-    margin-left: 5px;
-    background: black;
-    border-color: black;
-    color: white;
-}
-
 .current-page {
     background-color: #7FC37E;
     border-color: #7FC37E;
@@ -36,7 +29,7 @@ header {
     border-color: #2F7739;
 }
 
-.modal-body {
+#signupForm {
     background-color: #7FC37E;
 }
 

@@ -4,87 +4,18 @@
 
 @section Header{
     <!--Header and buttons-->
-		<li class="nav-item">
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
-		</li>
-		<li class="nav-item">
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login">Log In</button>
-		</li>	
+	<li class="nav-item">
+		<a class="btn" asp-controller="Account" asp-action="UserSignUp" asp-route-returnurl="@ViewContext.HttpContext.Request.UserSignUp()">
+			Sign Up
+		</a>
+	</li>
 
-	<!--Sign Up Modal Form-->
-	<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
-				
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-body">
-							
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							
-					<div class="signupForm">
-						<h1 class="text-center">Sign Up</h1>
-								
-						<form>
-									
-							<div class="mb-3 mt-4">
-								<label for="usernameSignup" class="form-label">Username</label>
-								<input type="text" class="form-control" id="usernameSignup" aria-describedby="usernameHelp">
-							</div>
-									
-							<div class="mb-3 mt-4">
-								<label for="email" class="form-label">Email address</label>
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-							</div>
-									
-							<div class="mb-3">
-								<label for="passwordSignup" class="form-label">Password</label>
-								<input type="password" class="form-control" id="passwordSignup">
-							</div>
-									
-							<div class="mb-3">
-								<label for="passwordConfirm" class="form-label">Confirm Password</label>
-								<input type="password" class="form-control" id="passwordConfirm">
-							</div>
-									
-							<button type="submit" class="btn btn-dark">Sign Up</button>        
-						</form>  
-					</div>
-				</div>     
-			</div>  
-		</div>
-	</div> 
-			
-	<!--Login Modal Form-->
-	<div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-				
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-body">
-							
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							
-					<div class="loginForm">
-						<h1 class="text-center">Log In</h1>
-								
-						<form>
-									
-							<div class="mb-3 mt-4">
-								<label for="usernameLogin" class="form-label">Username</label>
-								<input type="text" class="form-control" id="usernameLogin" aria-describedby="usernameHelp">
-							</div>
-									
-							<div class="mb-3">
-								<label for="passwordLogin" class="form-label">Password</label>
-								<input type="password" class="form-control" id="passwordLogin">
-							</div>
-									
-							<button type="submit" class="btn btn-dark">Log In</button>
-							<p>Not a member?<button type="button" class="btn" id="modalClose" data-bs-target="#signup" data-bs-toggle="modal">Sign Up Now</button></p>
-						</form>  
-					</div>
-				</div>     
-			</div>  
-		</div>
-	</div>
+	<li class="nav-item">
+		<a class="btn" asp-controller="Account" asp-action="UserLogin" asp-route-returnurl="@ViewContext.HttpContext.Request.UserLogin()">
+			Log In
+		</a>
+	</li>
+		 
 }
 
 @section Products{
