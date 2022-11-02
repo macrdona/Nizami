@@ -9,6 +9,9 @@
 insert into Orders(OrderID,Shipped,Name,Line1,Line2,Line3,City,State,Zip,Country,GiftWrap) 
 values(0,1,'','','','','','',0,'',0)
 
+4. Insert new column to ASPNetUser. This column will hold value 0 or 1 to represent if user is customer or admin.
 
+alter table AspNetUsers
+add UserId int
 
 
