@@ -1,9 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace Nizami.Models.ViewModels
 {
     public class LoginModel
     {
+
         public string UserName { get; set; }
 
         [Required]
@@ -13,6 +15,7 @@ namespace Nizami.Models.ViewModels
         [Required]
         [UIHint("password")]
         public string Password { get; set; }
+
         public string ReturnUrl { get; set; } = "/";
 
     }

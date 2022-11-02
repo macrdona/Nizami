@@ -36,7 +36,7 @@ namespace Nizami.Controllers
             if (ModelState.IsValid)
             {
                 AppUser user = await userManager.FindByEmailAsync(loginModel.Email);
-                if (user != null)
+                if (user != null && user.UserId == 1)
                 {
                     await signInManager.SignOutAsync();
                     if ((await signInManager.PasswordSignInAsync(user,loginModel.Password, false, false)).Succeeded)
@@ -122,7 +122,8 @@ namespace Nizami.Controllers
                 AppUser user = new AppUser
                 {
                     UserName = model.UserName,
-                    Email = model.Email
+                    Email = model.Email,
+                    UserId = 0
                 };
                 IdentityResult result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
@@ -156,7 +157,7 @@ namespace Nizami.Controllers
             if (ModelState.IsValid)
             {
                 AppUser user = await userManager.FindByEmailAsync(loginModel.Email);
-                if (user != null)
+                if (user != null && user.UserId == 0)
                 {
                     await signInManager.SignOutAsync();
                     if ((await signInManager.PasswordSignInAsync(user, loginModel.Password, false, false)).Succeeded)
