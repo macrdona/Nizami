@@ -15,6 +15,8 @@ namespace Nizami.Models.ViewModels
        public PagingInfo PagingInfo { get; set; }
        //display products based on selected category
        public string CurrentCategory { get; set; }
+
+       public int SortPrice { get; set; }
        
     }
 }

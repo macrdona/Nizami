@@ -41,11 +41,7 @@
             <!--Sidebar will be rendered inside this div-->
             <div class="col-xs-6 col-sm-4 col-lg-2">
                 @await Component.InvokeAsync("NavigationMenu")
-                <form asp-action="Index" asp-controller="Home" asp-route-sort="1">
-                    <button type="submit" class="btn btn-info btn-sm float-right">
-                        Sort by Price
-                    </button>
-                </form>
+                @RenderSection("SortPrice",false)
             </div>
 
             <!--Products will be rendered inside this div-->

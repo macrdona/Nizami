@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ProductsListViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -20,7 +21,7 @@
 
 @section Products{
 	<div class="row row-cols-1 row-cols-md-3 g-4">
-		@model ProductsListViewModel
+		
 		@foreach (var p in Model.Products)
 		{
 			//this will call the html code inside the ProductSummary partial view
@@ -30,9 +31,32 @@
 	<div class="row" id="pages">
 		<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
 		 page-class="btn" page-class-normal="btn-default"
-		 page-class-selected="current-page" page-url-category="@Model.CurrentCategory" class="btn-group float-right" id="pageNumber">
+		 page-class-selected="current-page" page-url-category="@Model.CurrentCategory" page-url-sort="@Model.SortPrice" 
+		 class="btn-group float-right" id="pageNumber">
 		</div>
 	</div>
+}
+
+@section SortPrice{
+	@{
+
+		if (Model.SortPrice == 1)
+		{
+			<form asp-action="Index" asp-controller="Home" asp-route-page="1" asp-route-sort="0">
+				<button type="submit" class="btn btn-info btn-sm float-right">
+					Unsort by Price
+				</button>
+			</form>
+		}
+		else{
+			<form asp-action="Index" asp-controller="Home" asp-route-sort="1">
+				<button type="submit" class="btn btn-info btn-sm float-right">
+					Sort by Price
+				</button>
+			</form>
+		}
+
+	}
 }
 
 @section Footer{

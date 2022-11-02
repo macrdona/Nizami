@@ -25,8 +25,8 @@
 
     |Method|Parameters|Return|Description|
     |-----------|-----------|-----------|-----------|
-    |NavigationMenuViewComponent|IProductRepository|Void|Initializes variable **repository** with a list of all products in the database.|
-    |Invoke|None|IViewComponentResult|This method is invoked by @await Component.InvokeAsync("NavigationMenu") in the _IndexLayout.cshtml View. This method then searches for NavigationMenu/Default.cshtml in the view folder, and passes it a list of all distinct product categories.|
+    |NavigationMenuViewComponent|IProductRepository|Void|Initializes global variable **repository** with an instance of IProductRepository, which is a repository for all the products in the database.|
+    |Invoke|None|IViewComponentResult|This method is invoked by @await Component.InvokeAsync("NavigationMenu") in the _IndexLayout View. This method calls the view 'Components/NavigationMenu/Default.cshtml' in the Views folder, and initializes the model with a list of all distinct product categories.|
 
 
 - CartSummaryViewComponent

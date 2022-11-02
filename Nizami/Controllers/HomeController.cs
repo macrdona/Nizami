@@ -9,23 +9,15 @@ using System.ComponentModel;
 
 namespace Nizami.Controllers
 {
-    /*This class that will handle HTTP requests*/
     public class HomeController : Controller
     {
         private IProductRepository repository;
-        public int PageSize = 20; // to make the items 20 per page
+        public int PageSize = 20; 
         public HomeController(IProductRepository repo)
         {
             repository = repo;
         }
 
-        //GET Index()
-        /*Index is an action method that will be called when Index.cshtml is invoked.
-        When invoked, it will return a list of prducts available in the repository*/
-
-        /*
-         * Changed Index to show only 20 items per page
-         */
         public ViewResult Index(string category, int sort=0, int page = 1)
             => View(new ProductsListViewModel
             {
@@ -43,7 +35,8 @@ namespace Nizami.Controllers
                          repository.Products.Where(e =>
                          e.Category == category).Count()
                 },
-                CurrentCategory = category
+                CurrentCategory = category,
+                SortPrice = sort
             });
 
         public ViewResult PostLogin(string category, int sort = 0, int page = 1)

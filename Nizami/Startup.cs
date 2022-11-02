@@ -72,25 +72,39 @@ namespace Nizami
 
             app.UseMvc(routes =>
             {
-                //lists all products where category = "selected category" and moved to another page with more items
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}/Page{page:int}/{sort:int}",
+                    defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
+
+                routes.MapRoute(
+                    name: null,
+                    template: "Page{page:int}/{sort:int}",
+                    defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
+                
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}/{sort:int}",
+                    defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
                 routes.MapRoute(
                     name: null,
                     template: "{category}/Page{page:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
-                //lists all products where category = null and moved to another page with more items
                 routes.MapRoute(
                     name: null,
                     template: "Page{page:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
-                //lists all products where category = "selected category" and is in landing page
                 routes.MapRoute(
                     name: null,
                     template: "{category}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
-                //lists all products where category = null and is in landing page
+
                 routes.MapRoute(
                     name: null,
                     template: "",
