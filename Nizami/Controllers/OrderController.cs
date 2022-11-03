@@ -1,20 +1,43 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Nizami.Infrastructure;
 using Nizami.Models;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Nizami.Controllers
 {
     public class OrderController : Controller
     {
-        private IOrderRepository repository; private Cart cart; 
-        public OrderController(IOrderRepository repoService, Cart cartService) 
+        private IOrderRepository repository; 
+        private Cart cart;
+        private UserManager<AppUser> userManager;
+        public OrderController(IOrderRepository repoService, Cart cartService, UserManager<AppUser> userMgr) 
         { 
             repository = repoService; cart = cartService;
+            userManager = userMgr;
+        }
+
+        private async Task<bool> AuthenticatAdmin()
+        {
+            AppUser appUser = await userManager.GetUserAsync(HttpContext.User);
+            if (appUser.UserId == 1)
+            {
+                return true;
+            }
+            return false;
         }
 
         [Authorize]
-        public ViewResult List() => View(repository.Orders.Where(o => !o.Shipped));
+        public async Task<IActionResult> List()
+        {
+            if (await AuthenticatAdmin())
+            {
+                return View(repository.Orders.Where(o => !o.Shipped));
+            }
+            return Redirect(HttpContext.Request.HomePage());
+        }
 
         [HttpPost]
         [Authorize]

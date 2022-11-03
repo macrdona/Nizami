@@ -8,6 +8,7 @@ using Nizami.Models;
 using Nizami.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
 
 namespace Nizami.Controllers
 {
@@ -16,7 +17,6 @@ namespace Nizami.Controllers
     {
         private UserManager<AppUser> userManager;
         private SignInManager<AppUser> signInManager;
-
         public AccountController(UserManager<AppUser> userMgr, SignInManager<AppUser> signInMgr)
         {
             userManager = userMgr;

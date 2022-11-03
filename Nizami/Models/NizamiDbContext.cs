@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
+using Microsoft.AspNetCore.Http;
 /*
 * This class acts as an interface to pull data from the database
 */

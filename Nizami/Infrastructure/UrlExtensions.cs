@@ -28,5 +28,6 @@ namespace Nizami.Infrastructure
         public static string UserLogin() => "/Home/PostLogin";
 
         public static string HomePage(this HttpRequest request) => "/Home/Index";
+
     }
 }
