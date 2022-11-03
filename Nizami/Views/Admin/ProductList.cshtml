@@ -23,10 +23,10 @@
             <td class="text-center">
                 <form asp-action="Delete" method="post">
                     <a asp-action="Edit" class="btn btn-sm btn-warning"
-                   asp-route-productId="@item.ProductID">
+                   asp-route-productId="@item.ProductID"><!--AdminMod1 asp-route-productId-->
                         Edit
                     </a>
-                    <input type="hidden" name="ProductID" value="@item.ProductID" />
+                    <input type="hidden" name="ProductID" value="@item.ProductID" /><!--AdminMod2 asp-route-productId-->
                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                 </form>
             </td>

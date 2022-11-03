@@ -21,7 +21,6 @@ namespace Nizami.Controllers
             signInManager = signInMgr;
         }
 
-        //HTTP GET
         [AllowAnonymous]
         public ViewResult AdminLogin(string returnUrl)
         {
@@ -55,8 +54,6 @@ namespace Nizami.Controllers
             return Redirect(returnUrl);
         }
 
-        // GET: /<controller>/
-        [AllowAnonymous]
         public ViewResult Accounts()
         {
             return View(userManager.Users);
@@ -111,7 +108,6 @@ namespace Nizami.Controllers
             return View(new LoginModel { ReturnUrl = returnUrl });
         }
 
-        //POST: Account/Create
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]

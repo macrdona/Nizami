@@ -56,7 +56,8 @@ namespace Nizami.Controllers
                          repository.Products.Where(e =>
                          e.Category == category).Count()
                      },
-                     CurrentCategory = category
+                     CurrentCategory = category,
+                     SortPrice = sort
                  });
 
         public IActionResult Privacy()

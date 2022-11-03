@@ -16,9 +16,9 @@
     <header>
         <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" id="navbar-logo" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="/logo/png/High Resolution Logo.png" alt="" width="120" height="100" class="d-inline-block align-text-top">
-                </a>
+
+                @RenderSection("Img", false)
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,7 +40,7 @@
         <div class="row">
             <!--Sidebar will be rendered inside this div-->
             <div class="col-xs-6 col-sm-4 col-lg-2">
-                @await Component.InvokeAsync("NavigationMenu")
+                @RenderSection("Categories", false)
                 @RenderSection("SortPrice",false)
             </div>
 

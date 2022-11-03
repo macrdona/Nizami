@@ -12,6 +12,7 @@
 			<h3>@Model.Name</h3>
 			<p>@Model.Description</p>
 			<p>@Model.Price.ToString("c")</p>
+			<!--CartMod3-->
 			<form id="@Model.ProductID" asp-action="AddToCart"
 				  asp-controller="Cart" method="post">
 				<input type="hidden" asp-for="ProductID" />

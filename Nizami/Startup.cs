@@ -74,41 +74,72 @@ namespace Nizami
             {
                 routes.MapRoute(
                     name: null,
-                    template: "{category}/Page{page:int}/{sort:int}",
+                    template: "{action}/{category}/Page{page:int}/{sort:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
 
                 routes.MapRoute(
                     name: null,
-                    template: "Page{page:int}/{sort:int}",
+                    template: "{action}/Page{page:int}/{sort:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
                 
                 routes.MapRoute(
                     name: null,
-                    template: "{category}/{sort:int}",
+                    template: "{action}/{category}/{sort:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
                 routes.MapRoute(
                     name: null,
-                    template: "{category}/Page{page:int}",
+                    template: "{action}/{category}/Page{page:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
                 routes.MapRoute(
                     name: null,
-                    template: "Page{page:int}",
+                    template: "{action}/Page{page:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
                 routes.MapRoute(
                     name: null,
-                    template: "{category}",
+                    template: "{action}/{category}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
-
                 routes.MapRoute(
                     name: null,
                     template: "",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "{action}/{category}/Page{page:int}/{sort:int}",
+                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
+                );
+
+                routes.MapRoute(
+                    name: null,
+                    template: "{action}/Page{page:int}/{sort:int}",
+                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
+                );
+
+                routes.MapRoute(
+                    name: null,
+                    template: "{action}/{category}/{sort:int}",
+                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "{action}/{category}/Page{page:int}",
+                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "{action}/Page{page:int}",
+                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "{action}/{category}",
+                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
                 );
 
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");

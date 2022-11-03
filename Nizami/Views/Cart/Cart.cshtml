@@ -32,9 +32,9 @@
                             <td>
                                 <form asp-action="RemoveFromCart" method="post">
                                     <input type="hidden" name="ProductID"
-                                       value="@line.Product.ProductID" />
+                                       value="@line.Product.ProductID" /><!--CartMod2-->
                                     <input type="hidden" name="returnUrl"
-                                       value="@Model.ReturnUrl" />
+                                       value="@Model.ReturnUrl" /><!--CartMod2-->
                                     <button type="submit" class="btn btn-sm btn-danger ">
                                         Remove
                                     </button>

@@ -24,7 +24,7 @@
                         <!--HomeMod1/HomeMode2-->
                         <a class="dropdown-item
                             @(category == ViewBag.SelectedCategory ? "btn btn-outline-success" : "")"
-                            asp-action="Index"
+                            asp-action="PostLogin"
                             asp-controller="Home"
                             asp-route-category="@category"
                             asp-route-page="1">
@@ -34,7 +34,7 @@
                 }
             }
             else{
-                <li><a class="dropdown-item" asp-action="Index" asp-controller="Home" asp-route-category="">REMOVE FILTER</a></li>
+                <li><a class="dropdown-item" asp-action="PostLogin" asp-controller="Home" asp-route-category="">REMOVE FILTER</a></li>
             }
         }
     </ul>

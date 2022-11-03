@@ -3,15 +3,23 @@
     ViewData["Title"] = "Home Page";
 }
 
+@section Img{
+	<a class="navbar-brand" id="navbar-logo" asp-area="" asp-controller="Home" asp-action="Index">
+       <img src="/logo/png/High Resolution Logo.png" alt="" width="120" height="100" class="d-inline-block align-text-top">
+    </a>
+}
+
 @section Header{
     <!--Header and buttons-->
 	<li class="nav-item">
+		<!--AccountMod4: asp-route-returnurl-->
 		<a class="btn" asp-controller="Account" asp-action="UserSignUp" asp-route-returnurl="@ViewContext.HttpContext.Request.UserSignUp()">
 			Sign Up
 		</a>
 	</li>
 
 	<li class="nav-item">
+		<!--AccountMod5: asp-route-returnurl-->
 		<a class="btn" asp-controller="Account" asp-action="UserLogin" asp-route-returnurl="@ViewContext.HttpContext.Request.UserLogin()">
 			Log In
 		</a>
@@ -24,7 +32,6 @@
 		
 		@foreach (var p in Model.Products)
 		{
-			//this will call the html code inside the ProductSummary partial view
 			@Html.Partial("ProductSummary/Default", p)								
 		}
 	</div>
@@ -37,22 +44,28 @@
 	</div>
 }
 
+@section Categories{
+	@await Component.InvokeAsync("NavigationMenu")
+}
+
 @section SortPrice{
 	@{
 
 		if (Model.SortPrice == 1)
 		{
+			<!--HomeMod2/HomeMode3-->
 			<form asp-action="Index" asp-controller="Home" asp-route-page="1" asp-route-sort="0">
-				<button type="submit" class="btn btn-info btn-sm float-right">
-					Unsort by Price
-				</button>
+					<button type="submit" class="btn btn-info btn-sm float-right">
+						Unsort by Price
+					</button>
 			</form>
 		}
 		else{
+			<!--HomeMode3-->
 			<form asp-action="Index" asp-controller="Home" asp-route-sort="1">
-				<button type="submit" class="btn btn-info btn-sm float-right">
-					Sort by Price
-				</button>
+					<button type="submit" class="btn btn-info btn-sm float-right">
+						Sort by Price
+					</button>
 			</form>
 		}
 
@@ -67,6 +80,7 @@
 
 		<ul class="nav col-md-4 justify-content-end">
 			<li class="nav-item">
+				<!--AccountMod1: asp-route-returnurl-->
 				<a class="nav-link px-2 text-muted" asp-controller="Account" asp-action="AdminLogin" asp-route-returnurl="@ViewContext.HttpContext.Request.AdminLogin()">
 					Admin Login
 				</a>
