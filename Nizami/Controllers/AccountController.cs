@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Nizami.Models.ViewModels;
 using Nizami.Models;
 using Nizami.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
 
 namespace Nizami.Controllers
 {
@@ -40,7 +42,7 @@ namespace Nizami.Controllers
                     await signInManager.SignOutAsync();
                     if ((await signInManager.PasswordSignInAsync(user,loginModel.Password, false, false)).Succeeded)
                     {
-                        return Redirect(loginModel?.ReturnUrl ?? "");
+                        return Redirect(loginModel?.ReturnUrl ?? UrlExtensions.AdminLogin());
                     }
                 }
             }
@@ -125,7 +127,7 @@ namespace Nizami.Controllers
                 if (result.Succeeded)
                 {
                     //await signInManager.SignInAsync(user, isPersistent: false);
-                    return Redirect(model?.ReturnUrl ?? "");
+                    return Redirect(model?.ReturnUrl ?? UrlExtensions.UserSignUp());
                 }
                 else
                 {
@@ -158,7 +160,7 @@ namespace Nizami.Controllers
                     await signInManager.SignOutAsync();
                     if ((await signInManager.PasswordSignInAsync(user, loginModel.Password, false, false)).Succeeded)
                     {
-                        return Redirect(loginModel?.ReturnUrl ?? "");
+                        return Redirect(loginModel?.ReturnUrl ?? UrlExtensions.UserLogin());
                     }
                 }
             }

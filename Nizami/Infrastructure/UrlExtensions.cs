@@ -19,10 +19,13 @@ namespace Nizami.Infrastructure
         : request.Path.ToString();
 
         public static string AdminLogin(this HttpRequest request) => "/Admin/ProductList";
+        public static string AdminLogin() => "/Admin/ProductList";
 
         public static string UserSignUp(this HttpRequest request) => "/Home/PostLogin";
+        public static string UserSignUp() => "/Home/PostLogin";
 
         public static string UserLogin(this HttpRequest request) => "/Home/PostLogin";
+        public static string UserLogin() => "/Home/PostLogin";
 
         public static string HomePage(this HttpRequest request) => "/Home/Index";
     }

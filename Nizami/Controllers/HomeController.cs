@@ -6,9 +6,11 @@ using Microsoft.Extensions.Options;
 using System.Linq;
 using Nizami.Models.ViewModels;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Nizami.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private IProductRepository repository;
@@ -18,6 +20,7 @@ namespace Nizami.Controllers
             repository = repo;
         }
 
+        [AllowAnonymous]
         public ViewResult Index(string category, int sort=0, int page = 1)
             => View(new ProductsListViewModel
             {

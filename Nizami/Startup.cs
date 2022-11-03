@@ -74,23 +74,6 @@ namespace Nizami
             {
                 routes.MapRoute(
                     name: null,
-                    template: "{action}/{category}/Page{page:int}/{sort:int}",
-                    defaults: new { controller = "Home", action = "Index", page = 1 }
-                );
-
-                routes.MapRoute(
-                    name: null,
-                    template: "{action}/Page{page:int}/{sort:int}",
-                    defaults: new { controller = "Home", action = "Index", page = 1 }
-                );
-                
-                routes.MapRoute(
-                    name: null,
-                    template: "{action}/{category}/{sort:int}",
-                    defaults: new { controller = "Home", action = "Index", page = 1 }
-                );
-                routes.MapRoute(
-                    name: null,
                     template: "{action}/{category}/Page{page:int}",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
                 );
@@ -108,23 +91,6 @@ namespace Nizami
                     name: null,
                     template: "",
                     defaults: new { controller = "Home", action = "Index", page = 1 }
-                );
-                routes.MapRoute(
-                    name: null,
-                    template: "{action}/{category}/Page{page:int}/{sort:int}",
-                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
-                );
-
-                routes.MapRoute(
-                    name: null,
-                    template: "{action}/Page{page:int}/{sort:int}",
-                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
-                );
-
-                routes.MapRoute(
-                    name: null,
-                    template: "{action}/{category}/{sort:int}",
-                    defaults: new { controller = "Home", action = "PostLogin", page = 1 }
                 );
                 routes.MapRoute(
                     name: null,

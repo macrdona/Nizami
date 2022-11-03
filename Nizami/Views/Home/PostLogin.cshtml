@@ -12,6 +12,7 @@
 
 @section Header{
 	<li class="nav-item">@await Component.InvokeAsync("CartSummary")</li>
+	<a class="btn btn-sm btn-primary float-right" asp-action="Logout" asp-controller="Account">Log Out</a>
 }
 
 @section Products{

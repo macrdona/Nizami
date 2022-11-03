@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Nizami.Infrastructure;
@@ -7,7 +8,9 @@ using Nizami.Models.ViewModels;
 
 namespace Nizami.Controllers
 {
+
     //This class controls the actions on the shopping cart
+    [Authorize]
     public class CartController : Controller
     {
         private IProductRepository repository;
