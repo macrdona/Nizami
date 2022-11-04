@@ -14,4 +14,12 @@ values(0,1,'','','','','','',0,'',0)
 alter table AspNetUsers
 add UserId int
 
+5. Insert tables 
+alter table Orders
+add CardNumber varchar(255)
+
+alter table Orders
+add CVV varchar(255)
+
+
 

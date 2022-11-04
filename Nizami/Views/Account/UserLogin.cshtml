@@ -20,6 +20,22 @@
     <button class="btn btn-primary" type="submit">Log In</button>
 </form>
 
+<form asp-action="Edit" asp-controller="Account" method="post">
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <div><span asp-validation-for="Email" class="text-danger"></span></div>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <div><span asp-validation-for="Password" class="text-danger"></span></div>
+        <input asp-for="Password" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-info btn-sm float-right">
+        Change Password
+    </button>
+</form>
+
 <form asp-action="Index" asp-controller="Home">
     <button type="submit" class="btn btn-info btn-sm float-right">
         Return

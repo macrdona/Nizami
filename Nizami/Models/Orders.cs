@@ -39,6 +39,16 @@ namespace Nizami.Models
         [Required(ErrorMessage = "Please enter a country name")]
         public string Country { get; set; }
 
+        [Required]
+        [RegularExpression(@"\d{16}|\d{4}[- ]\d{4}[- ]\d{4}[- ]\d{4}",
+            ErrorMessage="Credit Card number is not valid")]
+        public string CardNumber { get; set; }
+
+        [Required]
+        [RegularExpression(@"{3}",
+            ErrorMessage= "Security Code is not valid")]
+        public string CVV { get; set; }
+
         public bool GiftWrap { get; set; }
     }
 }

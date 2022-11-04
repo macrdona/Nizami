@@ -23,6 +23,16 @@ namespace Nizami.Controllers
             signInManager = signInMgr;
         }
 
+        private async Task<bool> AuthenticatAdmin()
+        {
+            AppUser appUser = await userManager.GetUserAsync(HttpContext.User);
+            if (appUser.UserId == 1)
+            {
+                return true;
+            }
+            return false;
+        }
+
         [AllowAnonymous]
         public ViewResult AdminLogin(string returnUrl)
         {
@@ -56,9 +66,13 @@ namespace Nizami.Controllers
             return Redirect(returnUrl);
         }
 
-        public ViewResult Accounts()
+        public async Task<IActionResult> Accounts()
         {
-            return View(userManager.Users);
+            if (await AuthenticatAdmin())
+            {
+                return View(userManager.Users);
+            }
+            return Redirect(HttpContext.Request.HomePage());  
         }
 
         private void AddErrors(IdentityResult result)
@@ -91,17 +105,26 @@ namespace Nizami.Controllers
             return View("Accounts", userManager.Users);
         }
 
-        public async Task<IActionResult> Edit(string id)
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string email, string password)
         {
-            AppUser user = await userManager.FindByIdAsync(id);
+            AppUser user = await userManager.FindByEmailAsync(email);
+
             if (user != null)
             {
-                return View(user);
+                IdentityResult result = await userManager.RemovePasswordAsync(user);
+                if (result.Succeeded)
+                {
+                    result = await userManager.AddPasswordAsync(user, password);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("UserLogin");
+                    }
+                }
             }
-            else
-            {
-                return RedirectToAction("Accounts");
-            }
+               return Redirect(HttpContext.Request.HomePage());
         }
 
         [AllowAnonymous]

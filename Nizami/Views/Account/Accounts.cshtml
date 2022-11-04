@@ -29,8 +29,6 @@
                 <td>@user.Email</td>
                 <!--<td>@user.PasswordHash</td>-->
                 <td>
-                    <!--AccountMod3: asp-route-id-->
-                    <a class="btn btn-success" asp-controller="Account" asp-action="Edit" asp-route-id="@user.Id">Edit</a>
                     <!--AccountMod2: asp-route-id-->
                     <a class="btn btn-danger" asp-controller="Account" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
                 </td>
@@ -38,5 +36,4 @@
         }
     }
 </table>
-<a class="btn btn-primary" asp-action="Create">Create</a>
-<a class="btn btn-primary" asp-controller="Login" asp-action="Accounts">Home</a>
+<a class="btn btn-primary" asp-controller="Admin" asp-action="ProductList">Home</a>

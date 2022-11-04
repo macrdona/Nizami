@@ -107,7 +107,6 @@ namespace Nizami
                     template: "{action}/{category}",
                     defaults: new { controller = "Home", action = "PostLogin", page = 1 }
                 );
-
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
             });
         }
