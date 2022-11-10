@@ -6,34 +6,37 @@
 
 @section Img{
 	<a class="navbar-brand" id="navbar-logo" asp-area="" asp-controller="Home" asp-action="PostLogin">
-		<img src="/logo/png/High Resolution Logo.png" alt="" width="120" height="100" class="d-inline-block align-text-top">
+		<img src="/logo/svg/logo-no-background.svg" alt="" width="120" height="100" class="d-inline-block align-text-top">
 	</a>
 }
 
-@section Header{
-	<li class="nav-item">@await Component.InvokeAsync("CartSummary")</li>
-	<a class="btn btn-sm btn-primary float-right" asp-action="Logout" asp-controller="Account">Log Out</a>
+@section Logout{
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+			<a class="btn" asp-action="Logout" asp-controller="Account">Log Out</a>
+		</li>
+	</ul>
+}
+
+@section Cart{
+	@await Component.InvokeAsync("CartSummary")
 }
 
 @section Products{
-	<div class="row row-cols-1 row-cols-md-3 g-4">
 		@foreach (var p in Model.Products)
 		{
 			@Html.Partial("ProductSummary/PostLogin", p)
 		}
-	</div>
-	<!--HomeMod1/HomeMode3-->
-	<div class="row" id="pages">
-		<div page-model="@Model.PagingInfo" page-action="PostLogin" page-classes-enabled="true"
-			page-class="btn" page-class-normal="btn-default"
-		 page-class-selected="current-page" page-url-category="@Model.CurrentCategory" page-url-sort="@Model.SortPrice"
-			class="btn-group float-right" id="pageNumber">
-		</div>
-	</div>
 }
 
-@section Categories{
-	@await Component.InvokeAsync("NavigationMenuPostLogin")
+@section Pagination{
+	<!--HomeMod1/HomeMode3-->
+	<nav>
+		<div page-model="@Model.PagingInfo" page-action="PostLogin" page-classes-enabled="true"
+		 page-class="page-link"
+		 page-class-selected="current-page" page-url-category="@Model.CurrentCategory" page-url-sort="@Model.SortPrice" id="pageNumber">
+		</div>
+	</nav>
 }
 
 @section SortPrice{
@@ -41,35 +44,13 @@
 
 		if (Model.SortPrice == 1)
 		{
-			<!--HomeMod2/HomeMode3-->
-			<form asp-action="PostLogin" asp-controller="Home" asp-route-page="1" asp-route-sort="0">
-				<button type="submit" class="btn btn-info btn-sm float-right">
-					Unsort by Price
-				</button>
-			</form>
+	<!--HomeMod2/HomeMode3-->
+	<a class="nav-link active" asp-action="PostLogin" asp-controller="Home" asp-route-page="1" asp-route-sort="0">Unsort by Price</a>
 		}
 		else
 		{
-			<!--HomeMode3-->
-			<form asp-action="PostLogin" asp-controller="Home" asp-route-sort="1">
-					<button type="submit" class="btn btn-info btn-sm float-right">
-						Sort by Price
-					</button>
-			</form>
+	<!--HomeMode3-->
+	<a class="nav-link active" asp-action="PostLogin" asp-controller="Home" asp-route-page="1" asp-route-sort="1">Sort by Price</a>
 		}
 	}
-}
-
-@section Footer{
-	<p class="col-md-4 mb-0 text-muted">© 2022 Nizami, Inc</p>
-	<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-		<img src="/logo/png/logo-no-background.png" alt="" width="40" height="32" class="d-inline-block align-text-top">
-	</a>
-
-	<ul class="nav col-md-4 justify-content-end">
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-	</ul>
 }

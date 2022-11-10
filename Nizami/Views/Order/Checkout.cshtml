@@ -1,52 +1,73 @@
 ﻿@model Orders
 
-<h2>Check out now</h2>
+@{
+    Layout = "_OrderLayout";
+}
+<div class="container">
+    <h2 class="my-5 h2 text-center">Checkout form</h2>
+    <div class="card">
+        <div asp-validation-summary="All" class="text-danger"></div>
 
-<p>Please enter your details, and we'll ship your goods right away!</p>
+        <form class="card-body" asp-action="Checkout" method="post">
 
-<div asp-validation-summary="All" class="text-danger"></div>
+            <div class="md-form mb-5">
+                <label asp-for="Name">Full Name</label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="md-form mb-5">
+                <label asp-for="Line1">Address</label>
+                <input asp-for="Line1" placeholder="1234 Main St" class="form-control" />
+            </div>
+            <div class="md-form mb-5">
+                <label asp-for="Line2">Address 2 (optional)</label>
+                <input asp-for="Line2" placeholder="Apartment or suite" class="form-control" />
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <label asp-for="Country">Country</label>
+                    <input type="text" asp-for="Country" class="form-control" />
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <label asp-for="State">State</label>
+                    <input type="text" asp-for="State" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <label asp-for="City">City</label>
+                    <input type="text" asp-for="City" class="form-control" />
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <label asp-for="Zip">Zip</label>
+                    <input type="text" asp-for="Zip" class="form-control" />
+                </div>
+            </div>
 
-<form asp-action="Checkout" method="post">
+            <div class="custom-control custom-checkbox">
+                <label class="custom-control-label">
+                    Gift wrap these items
+                    <input asp-for="GiftWrap" />
+                </label>
+            </div>
 
-    <h3>Ship to</h3>
-    <div class="form-group">
-        <label>Name:</label><input asp-for="Name" class="form-control" />
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="CardNumber">Credit card number</label>
+                    <input asp-for="CardNumber" class="form-control" />
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label asp-for="CVV">CVV</label>
+                    <input asp-for="CVV" class="form-control" />
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <div class="text-center">
+                <input class="btn btn-primary btn-lg btn-block" type="submit" value="Complete Order" />
+            </div>
+        </form>
     </div>
-    <h3>Address</h3>
-    <div class="form-group">
-        <label>Line 1:</label><input asp-for="Line1" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Line 2:</label><input asp-for="Line2" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Line 3:</label><input asp-for="Line3" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>City:</label><input asp-for="City" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>State:</label><input asp-for="State" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Zip:</label><input asp-for="Zip" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Country:</label><input asp-for="Country" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Credit Card Number:</label><input asp-for="CardNumber" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Security Code:</label><input asp-for="CVV" class="form-control" />
-    </div>
-    <h3>Options</h3>
-    <div class="checkbox">
-        <label>
-            <input asp-for="GiftWrap" /> Gift wrap these items
-        </label>
-    </div>
-    <div class="text-center">
-        <input class="btn btn-primary" type="submit" value="Complete Order" />
-    </div>
-</form>
+</div>
+

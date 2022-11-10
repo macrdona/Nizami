@@ -3,41 +3,65 @@
 	Layout = "_FormLayout";
 }
 
-<div class="text-danger" asp-validation-summary="All"></div>
+@section Form{
+    <div class="mb-md-5 mt-md-4 pb-5">
+        <div class="text-danger" asp-validation-summary="All"></div>
 
-<form asp-action="UserLogin" asp-controller="Account" method="post">
-    <input type="hidden" asp-for="ReturnUrl" />
-    <div class="form-group">
-        <label asp-for="Email"></label>
-        <div><span asp-validation-for="Email" class="text-danger"></span></div>
-        <input asp-for="Email" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Password"></label>
-        <div><span asp-validation-for="Password" class="text-danger"></span></div>
-        <input asp-for="Password" class="form-control" />
-    </div>
-    <button class="btn btn-primary" type="submit">Log In</button>
-</form>
+        <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
 
-<form asp-action="Edit" asp-controller="Account" method="post">
-    <div class="form-group">
-        <label asp-for="Email"></label>
-        <div><span asp-validation-for="Email" class="text-danger"></span></div>
-        <input asp-for="Email" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Password"></label>
-        <div><span asp-validation-for="Password" class="text-danger"></span></div>
-        <input asp-for="Password" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-info btn-sm float-right">
-        Change Password
-    </button>
-</form>
+        <form asp-action="UserLogin" asp-controller="Account" method="post">
+            <input type="hidden" asp-for="ReturnUrl" />
+            <div class="form-outline form-white mb-4">
+                <label class="form-label" asp-for="Email"></label>
+                <div><span asp-validation-for="Email" class="text-danger"></span></div>
+                <input asp-for="Email" class="form-control form-control-lg" />
+            </div>
+            <div class="form-outline form-white mb-4">
+                <label class="form-label" asp-for="Password"></label>
+                <div><span asp-validation-for="Password" class="text-danger"></span></div>
+                <input asp-for="Password" class="form-control form-control-lg" />
+            </div>
 
-<form asp-action="Index" asp-controller="Home">
-    <button type="submit" class="btn btn-info btn-sm float-right">
-        Return
-    </button>
-</form>
+            <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-outline-light btn-lg px-5">Return Home</a>
+        </form>
+ 
+        <p class="mb-0">
+            Don't have an account? 
+            <a 
+                class="text-white-50 fw-bold" asp-controller="Account" 
+                asp-action="UserSignUp" asp-route-returnurl="@ViewContext.HttpContext.Request.UserSignUp()">
+                Sign Up
+            </a>
+        </p>
+    </div>
+}
+
+@section Reset{
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">          
+                <div class="mb-md-5 mt-md-4 pb-5">
+
+                    <h2 class="fw-bold mb-2 text-uppercase">Reset Password</h2>
+
+                    <form asp-action="Edit" asp-controller="Account" method="post">
+                        <div class="form-outline form-white mb-4">
+                            <label asp-for="Email"></label>
+                            <div><span asp-validation-for="Email" class="text-danger"></span></div>
+                            <input asp-for="Email" class="form-control" />
+                        </div>
+                        <div class="form-outline form-white mb-4">
+                            <label asp-for="Password">New Password</label>
+                            <div><span asp-validation-for="Password" class="text-danger"></span></div>
+                            <input asp-for="Password" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-outline-light btn-lg px-5">
+                            Change Password
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}

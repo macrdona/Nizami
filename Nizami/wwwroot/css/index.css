@@ -1,25 +1,4 @@
-﻿body {
-    margin: 0px;
-    background-color: #FEFEE2;
-}
-
-header {
-    background-color: #7FC37E;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-#navbar {
-    background-color: #7FC37E;
-}
-
-.current-page {
+﻿.current-page {
     background-color: #7FC37E;
     border-color: #7FC37E;
 }
@@ -27,15 +6,6 @@ header {
 #pageNumber a:hover {
     background-color: #2F7739;
     border-color: #2F7739;
-}
-
-#signupForm {
-    background-color: #7FC37E;
-}
-
-.container {
-    max-width: 1700px;
-    margin-top: 10px;
 }
 
 #pages {

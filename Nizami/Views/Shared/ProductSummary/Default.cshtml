@@ -1,17 +1,17 @@
 ﻿@using Nizami.Infrastructure
 @model Product
 
-<!--This html code generates a list of cards with product info-->
-<div class="col">
-	<div class="card h-100" id="productCards">
-
-		<img src="@Model.Image" class="card-img-top h-50" alt="">
-
-		<div class="card-body">
-
-			<h3>@Model.Name</h3>
-			<p>@Model.Description</p>
-			<p>@Model.Price.ToString("c")</p>
-		</div>
-	</div>
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Product image-->
+        <img class="card-img-top" src="@Model.Image" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <h5 class="fw-bolder">@Model.Name</h5>
+                <p>@Model.Description</p>
+                <p>@Model.Price.ToString("c")</p>
+            </div>
+        </div>
+    </div>
 </div>

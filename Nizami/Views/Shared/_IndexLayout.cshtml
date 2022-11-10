@@ -1,70 +1,125 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Nizami</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Nizami.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" asp-href-include="lib/font-awesome/css/*.css" />
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>@ViewData["Title"] - Nizami</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/Nizami.styles.css" asp-append-version="true" />
+        <link rel="stylesheet" asp-href-include="lib/font-awesome/css/*.css" />
+    </head>
 
-<body>
-    <!--Navigation Bar-->
-    <header>
-        <nav class="navbar navbar-expand-xl navbar-light" id="navbar">
-            <div class="container-fluid">
+    <body>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
 
                 @RenderSection("Img", false)
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarBasic" style="">
-                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                        @RenderSection("Header", false)
+                <!--When window size decreases, this button will be rendered to display a drop down menu with the nav-items inside of it-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        @RenderSection("Navigation", false)
+                        <li class="nav-item">@RenderSection("SortPrice",false)</li>
+                        <li class="nav-item">@await Component.InvokeAsync("NavigationMenu")</li>
+                        @RenderSection("Cart", false)
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    @RenderSection("AdminLogin", false)
+                    @RenderSection("Logout", false)
                 </div>
             </div>
         </nav>
-    </header>
 
-    <!--Main Body-->
-    <div class="container">
-        <div class="row">
-            <!--Sidebar will be rendered inside this div-->
-            <div class="col-xs-6 col-sm-4 col-lg-2">
-                @RenderSection("Categories", false)
-                @RenderSection("SortPrice",false)
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Welcome to Nizami</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Explore the best quality products Jacksonville has to offer</p>
+                </div>
+            </div>
+        </header>
+
+        <!--Main Body-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    @RenderSection("Products", false)
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    @RenderSection("Pagination", false)
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="text-white text-center text-lg-start bg-dark">
+          
+            <div class="container p-4">
+                <div class="row mt-4">
+          
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About company</h5>
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+                        <p>
+                            Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                        molestias.
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Contact Information</h5>
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Warsaw, 00-967, Poland</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@example.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234 567 88</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                        <table class="table text-center text-white">
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>8am - 1am</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>9am - 10pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
             </div>
 
-            <!--Products will be rendered inside this div-->
-            <div class="col-xs-7 col-sm-10 col-lg-10">
-                <h2 class="text-center">Products</h2>
-                <!--This renders the content in the 'Products' section of the current page. For example, if user is currently on the index page
-                then the content in the 'Products' section of the index page will be rendered on this div.-->
-                @RenderSection("Products", false)
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p class="m-0 text-center text-white">Copyright &copy; Nizami 2022</p>
             </div>
-        </div>
-    </div>
-
-    <!--Footer-->
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            @RenderSection("Footer", false)
         </footer>
-    </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/index.js" asp-append-version="true" defer></script>
-    @await RenderSectionAsync("Scripts", required: false)
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
 
-</body>
+    </body>
 </html>

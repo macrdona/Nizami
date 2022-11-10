@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>@ViewData["Title"] - Nizami</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/Nizami.styles.css" asp-append-version="true" />
+        <link rel="stylesheet" asp-href-include="lib/font-awesome/css/*.css" />
+    </head>
+
+    <style>
+        body{
+            /* fallback for old browsers */
+            background: #6a11cb;
+            background: -webkit-linear-gradient(to right, rgb(193, 46, 192), rgb(119, 46, 192));
+            background: linear-gradient(to right, rgb(193, 46, 192), rgb(119, 46, 192))
+        }
+    </style>
+
+    <body>
+        @RenderBody()
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            @await RenderSectionAsync("Scripts", required: false)
+
+    </body>
+</html>

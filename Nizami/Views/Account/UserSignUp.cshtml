@@ -3,37 +3,30 @@
 	Layout = "_FormLayout";
 }
 
+@section Form{
+	<div class="mb-md-5 mt-md-4 pb-5">
+		<div asp-validation-summary="All" class="text-danger"></div>
 
-<div asp-validation-summary="All" class="text-danger"></div>
+		<h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
 
-<div class="container" id="signupForm">
-	<h1 class="text-center">Sign Up</h1>
-
-	<form method="post" asp-action="UserSignUp" asp-controller="Account" asp-antiforgery="true" class="form-horizontal">
-		<input type="hidden" asp-for="ReturnUrl" />
-		<div class="form-group">
-			<label class="control-label" asp-for="UserName">User Name:</label>
-			<input class="form-control" asp-for="UserName" />
-		</div>
-		<div class="form-group">
-			<label class="control-label" asp-for="Email">Email:</label>
-			<input class="form-control" asp-for="Email" />
-		</div>
-		<div class="form-group">
-			<label class="control-label" asp-for="Password">Password:</label>
-			<input class="form-control" asp-for="Password" type="password" />
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2">
-				<button type="submit" class="btn btn-primary">Create</button>
-				<button type="reset" class="btn btn-primary">Reset</button>
+		<form method="post" asp-action="UserSignUp" asp-controller="Account" asp-antiforgery="true" class="form-horizontal">
+			<input type="hidden" asp-for="ReturnUrl" />
+			<div class="form-outline form-white mb-4">
+				<label class="form-label" asp-for="UserName">User Name:</label>
+				<input class="form-control form-control-lg" asp-for="UserName" />
 			</div>
-		</div>
-	</form>
-
-	<form asp-action="Index" asp-controller="Home">
-		<button type="submit" class="btn btn-info btn-sm float-right">
-			Return
-		</button>
-	</form>
-</div>
+			<div class="form-outline form-white mb-4">
+				<label class="form-label" asp-for="Email">Email:</label>
+				<input class="form-control form-control-lg" asp-for="Email" />
+			</div>
+			<div class="form-outline form-white mb-4">
+				<label class="form-label" asp-for="Password">Password:</label>
+				<input class="form-control form-control-lg" asp-for="Password" type="password" />
+			</div>
+		
+			<button type="submit" class="btn btn-outline-light btn-lg px-5">Create</button>
+			<button type="reset" class="btn btn-outline-light btn-lg px-5">Reset Form</button>
+			<a asp-action="Index" asp-controller="Home" class="btn btn-outline-light btn-lg px-5">Return Home</a>
+		</form>
+	</div>
+}

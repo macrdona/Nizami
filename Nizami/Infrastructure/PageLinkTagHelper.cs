@@ -40,9 +40,13 @@ namespace Nizami.Infrastructure
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
 
             TagBuilder result = new TagBuilder("div");
+            TagBuilder list = new TagBuilder("ul");
+            list.AddCssClass("pagination pagination-lg justify-content-center");
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder tag = new TagBuilder("a");
+                TagBuilder listItem = new TagBuilder("li");
+                listItem.AddCssClass("page-item");
                 //provides page number to for URL
                 PageUrlValues["page"] = i;
                 tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
@@ -54,8 +58,10 @@ namespace Nizami.Infrastructure
                     ? PageClassSelected : PageClassNormal);
                 }
                 tag.InnerHtml.Append(i.ToString());
-                result.InnerHtml.AppendHtml(tag);
+                listItem.InnerHtml.AppendHtml(tag);
+                list.InnerHtml.AppendHtml(listItem);
             }
+            result.InnerHtml.AppendHtml(list);
             output.Content.AppendHtml(result.InnerHtml);
         }
     }
