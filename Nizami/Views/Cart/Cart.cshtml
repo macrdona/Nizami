@@ -23,7 +23,33 @@
                     @foreach (var line in Model.Cart.Lines)
                     {
                         <tr>
-                            <td scope="row" class="text-center">@line.Quantity</td>
+                            <td scope="row" class="text-center">
+                                @{
+                                    if(line.Quantity > 1){                     
+                                        <form asp-action="UpdateQuantity" method="post">
+                                            <input type="hidden" name="ProductID"
+                                            value="@line.Product.ProductID" /><!--CartMod2-->
+                                            <input type="hidden" name="returnUrl"
+                                            value="@ViewContext.HttpContext.Request.PathAndQuery()" /><!--CartMod2-->
+                                            <button type="submit" class="btn btn-link px-2">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                        </form>      
+                                    }
+                                }
+                                        
+                                @line.Quantity
+                                        
+                                <form asp-action="AddToCart" method="post">
+                                    <input type="hidden" name="ProductID"
+                                        value="@line.Product.ProductID" /><!--CartMod2-->
+                                    <input type="hidden" name="returnUrl"
+                                        value="@ViewContext.HttpContext.Request.PathAndQuery()" /><!--CartMod2-->
+                                    <button type="submit" class="btn btn-link px-2">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </form>   
+                            </td>
                             <td class="text-left">@line.Product.Name</td>
                             <td class="text-right">@line.Product.Price.ToString("c")</td>
                             <td class="text-right">

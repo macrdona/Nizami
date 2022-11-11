@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -46,6 +47,18 @@ namespace Nizami.Models
 
         //empty the cart
         public virtual void Clear() => lineCollection.Clear();
+
+        public virtual void ItemCount(Product product, int value)
+        {
+            CartLine line = lineCollection
+            .Where(p => p.Product.ProductID == product.ProductID)
+            .FirstOrDefault();
+
+            if (line != null)
+            {
+                line.Quantity += value;
+            }
+        }
 
         //return a list of all available items in the cart
         public virtual IEnumerable<CartLine> Lines => lineCollection;

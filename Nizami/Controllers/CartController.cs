@@ -33,6 +33,19 @@ namespace Nizami.Controllers
             });
         }
 
+        public RedirectResult UpdateQuantity(int productId, string returnUrl)
+        {
+            Product product = repository.Products
+            .FirstOrDefault(p => p.ProductID == productId);
+            if (product != null)
+            {
+
+                cart.AddItem(product, -1);
+
+            }
+            return Redirect(returnUrl);
+        }
+
         //this method adds item to cart
         public RedirectResult AddToCart(int productId, string returnUrl)
         {
@@ -60,6 +73,7 @@ namespace Nizami.Controllers
             }
             return RedirectToAction("Cart", new { returnUrl });
         }
+
     }
 }
 

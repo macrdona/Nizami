@@ -29,14 +29,14 @@ namespace Nizami.Models
 
         public string Line3 { get; set; }
 
+        [Required(ErrorMessage = "Please enter a city name")]
         public string City { get; set; }
 
         [Required(ErrorMessage = "Please enter a state name")]
         public string State { get; set; }
 
-        [Required(ErrorMessage = "Please enter a city name")]
         [RegularExpression(@"\d{5}",
-            ErrorMessage = "Security Code is not valid")]
+            ErrorMessage = "Zip Code is not valid")]
         public string Zip { get; set; }
 
         [Required(ErrorMessage = "Please enter a country name")]
