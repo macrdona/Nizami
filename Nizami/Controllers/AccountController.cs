@@ -9,6 +9,7 @@ using Nizami.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
+using System.Diagnostics;
 
 namespace Nizami.Controllers
 {
@@ -149,7 +150,7 @@ namespace Nizami.Controllers
                 IdentityResult result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    //await signInManager.SignInAsync(user, isPersistent: false);
+                    await signInManager.SignInAsync(user, isPersistent: false);
                     return Redirect(model?.ReturnUrl ?? UrlExtensions.UserSignUp());
                 }
                 else
@@ -183,6 +184,7 @@ namespace Nizami.Controllers
                     await signInManager.SignOutAsync();
                     if ((await signInManager.PasswordSignInAsync(user, loginModel.Password, false, false)).Succeeded)
                     {
+                        Debug.Write($"\n\nError here {loginModel?.ReturnUrl}\n\n");
                         return Redirect(loginModel?.ReturnUrl ?? UrlExtensions.UserLogin());
                     }
                 }
