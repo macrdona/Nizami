@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Nizami.Infrastructure;
 
-// Beginning Task 41: Subclass of the Cart class that will override the AddItem, RemoveLine, and Clear methods <Kenniece>
 namespace Nizami.Models
 {
     public class SessionCart : Cart

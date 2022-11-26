@@ -23,6 +23,8 @@ After pulling the files from the Git repository make sure:
 
 The purpose of this project is to create an e-commerce website using the .NET Framework, which follows the Model-View-Controller(MVC) architecture. NOTE: This project was created for a college course, and it is not meant to be used for commercial purposes. 
 
+Nizami is an e-commerce website where users can browse through various products and apply filters to search for specific products. Users can create accounts, use a shopping cart to keep track of the products they want, and submit orders to be shipped to customers. This project was built following the model-view-controller architecture. It involves handling http requests, routing url values, and modifying data from a database, etc... Application of security to prevent users from accessing certain pages without authentication and authorization.
+
 ## **Frameworks/Software**
 
 This is a list of the various software and languages used to create the website.
@@ -32,43 +34,42 @@ This is a list of the various software and languages used to create the website.
 - Visual Studio 2022, Microsoft SQL Server Management Studio 18, SQL Server 2019
 - Git & GitHub
 
-## **Project Stages** & Tasks
+## **Project Setup**
 
-Refer to the **ASP.NET Core MVC with Entity Framework Tutorial** for the tasks 
+1. Download & Install 
+    - Visual Studio 2022(https://visualstudio.microsoft.com/vs/)
+    - SQL Server(https://go.microsoft.com/fwlink/?LinkID=866658)
+            - Save a copy of your connection string, instance name, sql admin
+            - to run server in command line: sqlcmd -S [Server Name] -E
+    - SQl Management Studio(https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)[OPTIONAL]
+        - Login with SQL Server Admin User
+        - Setup Database
+        - Setup SQL Server User(Under Security>Login)
+            - Assign Database to SQL Server User
+        - Setup Database User (Under Databases>[Database Name]>Security>Users)
 
-Completed Tasks: :white_check_mark:
+2. Connect SQL Server to Visual Studio[Optional but suggested]
+    - Go to Tools > Connect To Database... Fill out the information and Test Connection.
 
-Incomplete Tasks:  :x:
+3. Edit connection string 
+    - Open the appsettings.json file, and change the connection string with your own. 
 
-**Stage 1** 
+4. Create Tables
+    - Go to Tools>NuGet Package Manager>Package Manager Console
+    - Run the following commands:
+        - EntityFrameworkCore\Add-Migration Identity
+            - Entity Framework Core can generate the schema for the database using the model classes through a feature called migrations. Entity Framework will try to idenify any models which the Database might be dependant on, and will add them to the migrations. 
+	    - EntityFrameworkCore\Update-Database
 
-- Tasks 1 through 6:white_check_mark:
+5. Run Queries
+    - NOTE: Since you are setting up a local database server, you will need to run the queries to populate your database with products to be displayed. 
+    - Execute queries on Products_Query file
+    - Execute the following query. You are creating a default order with this query.
+        ```
+        insert into Orders(OrderID,Shipped,Name,Line1,Line2,Line3,City,State,Zip,Country,GiftWrap) values(0,1,'','','','','','',0,'',0)
+        ```
 
-**Stage 2** 
-
-- Tasks 7 through 16:white_check_mark:
-
-**Stage 3**
-
-- Preparing Database, Task 17 through 23:white_check_mark:
-
-**Stage 4**
-
-- Tasks 24 through 29:white_check_mark:
-
-**Stage 5**
-
-- Tasks 31 through 40:white_check_mark:
-
-**Stage 6**
-
-- Tasks 41 through 43:x:
-
-**Stage 7**
-
-- Tasks 44 through 49:x:
-
-**Stage 8**
-
-- Tasks 50 through 59:x:
-
+6. Create Test Users
+    - Create two users through the applications interface(Create Account Form). 
+    - In the database change one of the users' UserID to 1. This will make the user an admin user and allow them access to admin pages. 
+    
