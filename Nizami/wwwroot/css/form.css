@@ -1,0 +1,19 @@
+﻿body {
+    margin: 0px;
+    background-color: #FEFEE2;
+}
+
+.container {
+    background-color:#7FC37E;
+    width: 400px;
+    height: 500px;
+}
+
+.btn{
+    margin: 20px;
+}
+
+.form-group{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

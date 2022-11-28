@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  font-weight: bold;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.header {
+                padding: 30px;
+                text-align: center;
+                background: #343a40;
+                color: white;
+                font-size: 30px;
+            }
+            
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #68abde;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+          background-color: #68abde;
+}
+.row{
+          background-color: #343a40;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+            background-color: #343a40
+  }
+ 
+</style>
+</head>
+<body>
+
+<div class="header">
+            <h1>Nizami</h1>
+        </div>
+
+<div class="about-section">
+  <h1>About Nizami</h1>
+  <h2>Mission Statement:<h2>
+  <h2>"To inspire healthier communities by connecting people to food"</h2>
+  <p>Our mission has been to encourage healthier habits by providing organic 
+     options for our customers. We at Nizami believe that a healthier diet
+     is essential for living a better life. By prodiving organic options for
+     our customers we at Nizami hope to encourage healthier living, because an organic 
+     life is a better life!.</p>
+  <h2>The Nizami Story</h2>
+  <p>Nizami was founded in 1987 by Miyawaki Nizami in Jacksonville, Florida.
+     Miyawaki immigrated to the United States from Japan in the 1950s searching for
+     new opportunities after the war destroyed his family's grocery store. 
+     Miyawaki settled in Florida and worked in local grocery store for several years.
+     Miyawaki started out as a cashier and worked his way up to eventually becoming the
+     manager of the store, with his bosses commenting that they had never seen a more diligent worker.
+     Despite his success as a store manager, Miyawaki longed for something different. After spending 
+     several years saving up money, together with his wife and two sons Miyawaki opened their
+     own grocery store, Nizami. Nizami has been proud to serve the Jacksonville community for the 
+     past 35 years, and we hope to keep serving you for many more!</p>
+   <h2>Core Values</h2>
+   <p>While working his first job as a cashier, Miyawaki's bosses instilled the belief of treating
+      his customers like royalty. Miyawaki has carried this belief with him throughout his time in 
+      the supermarket industry and is the core value that drives Nizami. Miyawaki believed that 
+      building rapport with his customers would lead to long lasting customer relationships. Miyawaki
+      encouraged his employees to treat his customers like they were family saying that "we're not a
+      business, we're family, if we treat our customers like they're one of us, they'll keep coming
+      back for more!" We at Nizami pride ourselves in catering to the needs of our customers and 
+      providing a high quality customer service experience. </p>
+</div>
+
+    <h2 style="text-align:center; background-color: #343a40; color:white;">Our Team</h2>
+    <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src= alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane De</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src= alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src= alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

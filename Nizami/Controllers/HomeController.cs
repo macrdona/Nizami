@@ -68,6 +68,19 @@ namespace Nizami.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public ActionResult FAQ()
+        {
+            return View();
+        }
+
+
+        [AllowAnonymous]
+        public ActionResult AboutMe()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

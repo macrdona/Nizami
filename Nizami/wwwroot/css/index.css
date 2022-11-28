@@ -1,11 +1,11 @@
 ﻿.current-page {
-    background-color: #7FC37E;
-    border-color: #7FC37E;
+    background-color: #68abde;
+    border-color: ##68abde;
 }
 
 #pageNumber a:hover {
-    background-color: #2F7739;
-    border-color: #2F7739;
+    background-color: #68abde;
+    border-color: #ffffff;
 }
 
 #pages {
