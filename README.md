@@ -66,7 +66,7 @@ This is a list of the various software and languages used to create the website.
     - Execute queries on Products_Query file
     - Execute the following query. You are creating a default order with this query.
         ```
-        insert into Orders(OrderID,Shipped,Name,Line1,Line2,Line3,City,State,Zip,Country,GiftWrap) values(0,1,'','','','','','',0,'',0)
+        insert into Orders(OrderID,Shipped,Name,Line1,Line2,Line3,City,State,Zip,Country,CardNumber,CVV,GiftWrap) values(0,1,'','','','','','',0,'',0,0,0)
         ```
 
 6. Create Test Users
